@@ -1,0 +1,49 @@
+[
+	{
+		"name": "HD800耳机 v2 - 声学重设计",
+		"preamp": -6.4,
+		"parametric": true,
+		"bands": [
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 40,
+				"q": 1.2,
+				"gain": 2.0,
+				"color": 0
+			},
+			{
+				"type": 0,
+				"channels": 0,
+				"frequency": 110,
+				"q": 0.7,
+				"gain": 4.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 5000,
+				"q": 1.41,
+				"gain": -1.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 6500,
+				"q": 4.32,
+				"gain": -2.5,
+				"color": 0
+			},
+			{
+				"type": 1,
+				"channels": 0,
+				"frequency": 10000,
+				"q": 0.7,
+				"gain": 1.0,
+				"color": 0
+			}
+		]
+	}
+]

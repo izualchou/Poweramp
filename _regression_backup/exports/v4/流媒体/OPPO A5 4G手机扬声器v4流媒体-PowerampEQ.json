@@ -1,0 +1,257 @@
+[
+	{
+		"name": "OPPO A5 4G手机扬声器 流媒体适配（基准 OPPO A5 4G手机扬声器v3）",
+		"preamp": -1.2,
+		"parametric": true,
+		"bands": [
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 20,
+				"q": 4.32,
+				"gain": -0.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 25,
+				"q": 4.32,
+				"gain": -0.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 31,
+				"q": 4.32,
+				"gain": -0.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 40,
+				"q": 4.32,
+				"gain": -0.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 50,
+				"q": 4.32,
+				"gain": -0.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 63,
+				"q": 4.32,
+				"gain": -0.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 80,
+				"q": 4.32,
+				"gain": -0.1,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 100,
+				"q": 4.32,
+				"gain": -0.1,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 125,
+				"q": 4.32,
+				"gain": -0.1,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 160,
+				"q": 4.32,
+				"gain": -0.2,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 200,
+				"q": 4.32,
+				"gain": -0.4,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 250,
+				"q": 4.32,
+				"gain": -0.4,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 315,
+				"q": 4.32,
+				"gain": -0.3,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 400,
+				"q": 4.32,
+				"gain": -0.1,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 500,
+				"q": 4.32,
+				"gain": 0.1,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 630,
+				"q": 4.32,
+				"gain": 0.3,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 800,
+				"q": 4.32,
+				"gain": 0.5,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 1000,
+				"q": 4.32,
+				"gain": 0.4,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 1250,
+				"q": 4.32,
+				"gain": 0.3,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 1600,
+				"q": 4.32,
+				"gain": 0.3,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 2000,
+				"q": 4.32,
+				"gain": 0.3,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 2500,
+				"q": 4.32,
+				"gain": 0.4,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 3150,
+				"q": 4.32,
+				"gain": 0.5,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 4000,
+				"q": 4.32,
+				"gain": 0.3,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 5000,
+				"q": 4.32,
+				"gain": 0.2,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 6300,
+				"q": 4.32,
+				"gain": 0.1,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 8000,
+				"q": 4.32,
+				"gain": 0.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 10000,
+				"q": 4.32,
+				"gain": 0.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 12500,
+				"q": 4.32,
+				"gain": 0.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 16000,
+				"q": 4.32,
+				"gain": 0.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 20000,
+				"q": 4.32,
+				"gain": 0.0,
+				"color": 0
+			}
+		]
+	}
+]

@@ -1,0 +1,89 @@
+{
+  "name": "Bose QC 45v2",
+  "device_type": "bluetooth_headphone",
+  "brand": "",
+  "model": "v2 声学重设计（依据声学特点.txt）",
+  "preference": "custom_v2",
+  "intensity": 1.0,
+  "custom_bands": [
+    "PK 40 -1 0.8",
+    "PK 2500 1.5 1.2",
+    "PK 8000 1 1.4",
+    "HSC 14000 0.5 0.7"
+  ],
+  "locked": true,
+  "note": "基于设备声学数据的系统性重设计",
+  "active": false,
+  "created_at": "2026-10-08T20:12:30",
+  "updated_at": "2026-10-08T20:12:30",
+  "target": "在 Bose 商业目标曲线（Bose Consumer Target）上做最小偏离：轻度收紧 Bose 偏多 sub-bass、补回被滚降遮蔽的中高频细节与空气感",
+  "metrics": "25-50Hz sub-bass -1dB（Bose 目标曲线在 ANC ON 时偏暖）；2-3.15kHz 人声可懂度 +1.5dB（ANC 模式被环境噪声掩蔽的优先补偿频段）；6.3-10kHz 滚降遮蔽 +0.5~1dB；12.5-20kHz 空气感轻补 +0.5dB；全部 ≤1.5dB 守 Bose 动态 EQ 算法输入裕量",
+  "status": "Bose 2021-09-29 发布，240g；主动消噪（ANC）+ Aware 透明模式；BT5.1（9m），24h 续航（ANC ON）；6 麦克风；动态音质均衡（音量自适应 EQ）；用户痛点：'Veiled'（高频被滚降）、ANC OFF 时'Muddy bass'、'Lack detail' vs HiFi、声场偏窄（封闭式物理上限）。",
+  "advice": "顺序：2.5k→8k→40Hz→14kHz 渐进；2.5kHz 最重要（信噪比收益最大）。ANC ON/OFF 需分别校准（ANC 改变低频感知）；Bose 应用 EQ 建议先关闭以免双 EQ 叠加失真；声场偏窄与降噪等级属硬件能力，EQ 不可改善。",
+  "filters_rationale": [
+    {
+      "freq": 40,
+      "type": "PK",
+      "gain": -1.0,
+      "q": 0.8,
+      "why": "40Hz sub-bass：ANC ON 时 Bose 主动提升（声学掩蔽对冲），轻收恢复平衡",
+      "effect": "低频从'略糊'转'清晰有弹性'，不破坏 Bose 招牌的'低频量感'印象"
+    },
+    {
+      "freq": 2500,
+      "type": "PK",
+      "gain": 1.5,
+      "q": 1.2,
+      "why": "2.5kHz 人声可懂度核心（ANC 噪声掩蔽下人耳最敏感频段）",
+      "effect": "地铁/通勤人声从'雾里'变'清晰'，与 Bose 动态 EQ 形成稳态互补"
+    },
+    {
+      "freq": 8000,
+      "type": "PK",
+      "gain": 1.0,
+      "q": 1.4,
+      "why": "8kHz 'Veiled' 滚降起始段补回，避免典型 ANC 耳机高频发暗",
+      "effect": "镲片/齿音的空气感与细节回归，'Detail' 痛点改善"
+    },
+    {
+      "freq": 14000,
+      "type": "HSC",
+      "gain": 0.5,
+      "q": 0.7,
+      "why": "14kHz Bose 主动滚降区轻补（封闭式物理衰减 14kHz 后趋零，留 0.5dB 余量）",
+      "effect": "空气感微抬，声场'打开'感（封闭式物理上限内）"
+    }
+  ],
+  "preset": {
+    "name": "Bose QC 45 v2 - 声学重设计",
+    "preamp": -2.1,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 0.8,
+        "gain": -1.0
+      },
+      {
+        "type": 3,
+        "frequency": 2500,
+        "q": 1.2,
+        "gain": 1.5
+      },
+      {
+        "type": 3,
+        "frequency": 8000,
+        "q": 1.4,
+        "gain": 1.0
+      },
+      {
+        "type": 1,
+        "frequency": 14000,
+        "q": 0.7,
+        "gain": 0.5
+      }
+    ],
+    "warnings": []
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "name": "OPPO A5 4G手机扬声器v4统一无损",
+  "device_type": "phone_speaker",
+  "brand": "",
+  "model": "统一无损音源适配（在线无损 + 本地无损合并方案）",
+  "preference": "custom_v4统一无损",
+  "intensity": 1.0,
+  "locked": true,
+  "active": false,
+  "note": "在线无损 + 本地无损合并方案",
+  "created_at": "2026-10-08T20:12:31",
+  "updated_at": "2026-10-08T20:12:31",
+  "base": "OPPO A5 4G手机扬声器v3",
+  "source": "v4统一无损",
+  "preset": {
+    "name": "OPPO A5 4G手机扬声器 统一无损适配（基准 OPPO A5 4G手机扬声器v3）",
+    "preamp": -1.2,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 20,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 25,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 31,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 50,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 63,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 80,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 100,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 125,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 160,
+        "q": 4.32,
+        "gain": -0.2
+      },
+      {
+        "type": 3,
+        "frequency": 200,
+        "q": 4.32,
+        "gain": -0.4
+      },
+      {
+        "type": 3,
+        "frequency": 250,
+        "q": 4.32,
+        "gain": -0.4
+      },
+      {
+        "type": 3,
+        "frequency": 315,
+        "q": 4.32,
+        "gain": -0.3
+      },
+      {
+        "type": 3,
+        "frequency": 400,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 500,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 630,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 800,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 1000,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 1250,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 1600,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 2000,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 2500,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 3150,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 4000,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 5000,
+        "q": 4.32,
+        "gain": 0.2
+      },
+      {
+        "type": 3,
+        "frequency": 6300,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 8000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 10000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 12500,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 16000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 20000,
+        "q": 4.32,
+        "gain": 0.0
+      }
+    ],
+    "warnings": [
+      "警告: 频段数 31 超过建议上限 16（主应用最多 128 段）"
+    ]
+  },
+  "source_class": "lossless",
+  "hi_res_capable": false,
+  "assumed": {
+    "codec": "FLAC/ALAC ≥ 16bit/44.1kHz",
+    "loudness": "service-dependent / -14 to -16 LUFS",
+    "bit_depth": "16-24",
+    "sample_rate": "44.1k-192k"
+  },
+  "service_preamp_offsets_db": {
+    "Apple Music Lossless": -0.5,
+    "Tidal HiFi": 0.0,
+    "Tidal HiFi Plus (MQA)": 0.0,
+    "Qobuz Studio": 0.0,
+    "Amazon Music HD": 0.0,
+    "QQ Music 无损": 0.0,
+    "本地 FLAC（无归一化）": 0.0,
+    "本地 ALAC": 0.0,
+    "本地 DSD/DSF": 0.0
+  },
+  "target": "物理受限设备：v3 已是 ±0.5dB 最小干预，无损源无可闻改进。维持 v3 不变。",
+  "listen_diff": "优化前/后无差异：保留 v3 即可。",
+  "conditions": [
+    "任一无损源——本设备 v3 干预幅度已极小",
+    "通道平衡向顶部扬声器偏置 1-2 格（系统设置）"
+  ],
+  "deltas": []
+}

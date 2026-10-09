@@ -1,0 +1,249 @@
+{
+  "name": "Bose QC 45v4流媒体",
+  "device_type": "bluetooth_headphone",
+  "brand": "",
+  "model": "流媒体音源适配（Ogg Vorbis / AAC 有损编码适配）",
+  "preference": "custom_v4流媒体",
+  "intensity": 1.0,
+  "locked": true,
+  "active": false,
+  "note": "Ogg Vorbis / AAC 有损编码适配",
+  "created_at": "2026-10-08T20:12:08",
+  "updated_at": "2026-10-08T20:12:08",
+  "base": "Bose QC 45v3",
+  "source": "v4流媒体",
+  "preset": {
+    "name": "Bose QC 45 流媒体适配（基准 Bose QC 45v3）",
+    "preamp": -2.7,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 20,
+        "q": 4.32,
+        "gain": -0.4
+      },
+      {
+        "type": 3,
+        "frequency": 25,
+        "q": 4.32,
+        "gain": -0.6
+      },
+      {
+        "type": 3,
+        "frequency": 31,
+        "q": 4.32,
+        "gain": -0.9
+      },
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 4.32,
+        "gain": -1.0
+      },
+      {
+        "type": 3,
+        "frequency": 50,
+        "q": 4.32,
+        "gain": -0.9
+      },
+      {
+        "type": 3,
+        "frequency": 63,
+        "q": 4.32,
+        "gain": -0.6
+      },
+      {
+        "type": 3,
+        "frequency": 80,
+        "q": 4.32,
+        "gain": -0.4
+      },
+      {
+        "type": 3,
+        "frequency": 100,
+        "q": 4.32,
+        "gain": -0.3
+      },
+      {
+        "type": 3,
+        "frequency": 125,
+        "q": 4.32,
+        "gain": -0.2
+      },
+      {
+        "type": 3,
+        "frequency": 160,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 200,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 250,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 315,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 400,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 500,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 630,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 800,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 1000,
+        "q": 4.32,
+        "gain": 0.2
+      },
+      {
+        "type": 3,
+        "frequency": 1250,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 1600,
+        "q": 4.32,
+        "gain": 0.7
+      },
+      {
+        "type": 3,
+        "frequency": 2000,
+        "q": 4.32,
+        "gain": 1.2
+      },
+      {
+        "type": 3,
+        "frequency": 2500,
+        "q": 4.32,
+        "gain": 1.6
+      },
+      {
+        "type": 3,
+        "frequency": 3150,
+        "q": 4.32,
+        "gain": 1.2
+      },
+      {
+        "type": 3,
+        "frequency": 4000,
+        "q": 4.32,
+        "gain": 0.8
+      },
+      {
+        "type": 3,
+        "frequency": 5000,
+        "q": 4.32,
+        "gain": 0.7
+      },
+      {
+        "type": 3,
+        "frequency": 6300,
+        "q": 4.32,
+        "gain": 0.9
+      },
+      {
+        "type": 3,
+        "frequency": 8000,
+        "q": 4.32,
+        "gain": 1.2
+      },
+      {
+        "type": 3,
+        "frequency": 10000,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 12500,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 16000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 20000,
+        "q": 4.32,
+        "gain": 0.0
+      }
+    ],
+    "warnings": [
+      "警告: 频段数 31 超过建议上限 16（主应用最多 128 段）"
+    ]
+  },
+  "source_class": "lossy",
+  "hi_res_capable": false,
+  "assumed": {
+    "codec": "Ogg Vorbis 320kbps / AAC 256kbps",
+    "loudness": "-14 to -16 LUFS (service-dependent)",
+    "bit_depth": "n/a",
+    "sample_rate": "44.1k-48k"
+  },
+  "service_preamp_offsets_db": {},
+  "target": "Bose 主动滚降区 ≥10kHz 在 Ogg Vorbis 编码下无可闻内容，归零收敛防伪影放大；8kHz 'Veiled' 起始段适度收敛；40Hz sub-bass 与 2.5kHz 人声核心段不受流媒体影响（编码不丢失这两段）保持 v3。",
+  "listen_diff": "优化前：流媒体下'Veiled' + 编码毛刺同时存在，高频像'隔了层纱'；优化后：高频'开纱'感，伪影不放大；2.5kHz 人声在两种音源下信噪比收益一致。",
+  "conditions": [
+    "在线无损 / 本地无损——BT 5.1 + ANC 已是瓶颈",
+    "Bose App 内置 EQ 必须关闭以免双 EQ 叠加失真",
+    "ANC ON/OFF 需分别校准（ANC 改变低频感知）"
+  ],
+  "deltas": [
+    {
+      "freq": 10000,
+      "old": 0.9,
+      "new": 0.4
+    },
+    {
+      "freq": 12500,
+      "old": 0.6,
+      "new": 0.1
+    },
+    {
+      "freq": 16000,
+      "old": 0.5,
+      "new": 0.0
+    },
+    {
+      "freq": 20000,
+      "old": 0.5,
+      "new": 0.0
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "IEM低频增强",
+  "device_type": "iem_dynamic",
+  "brand": "",
+  "model": "",
+  "preference": "bass_boost",
+  "intensity": 1.2,
+  "custom_bands": [],
+  "note": "演示档案1",
+  "active": true,
+  "created_at": "2026-10-06T22:45:22",
+  "updated_at": "2026-10-06T22:45:22",
+  "preset": {
+    "name": "IEM低频增强 - 入耳式 IEM（动圈） - 低频增强",
+    "preamp": -5.6,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 1.0,
+        "gain": 1.8
+      },
+      {
+        "type": 3,
+        "frequency": 60,
+        "q": 1.0,
+        "gain": -3.0
+      },
+      {
+        "type": 0,
+        "frequency": 80,
+        "q": 0.7,
+        "gain": 4.8
+      },
+      {
+        "type": 3,
+        "frequency": 3000,
+        "q": 1.4,
+        "gain": 2.0
+      },
+      {
+        "type": 3,
+        "frequency": 9000,
+        "q": 3.0,
+        "gain": -2.5
+      }
+    ],
+    "warnings": []
+  }
+}

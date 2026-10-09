@@ -1,0 +1,65 @@
+[
+	{
+		"name": "车载人声 - 车载音响 - 人声突出 + 高速路噪补偿（车载专用）",
+		"preamp": -4.0,
+		"parametric": true,
+		"bands": [
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 45,
+				"q": 1.0,
+				"gain": -3.0,
+				"color": 0
+			},
+			{
+				"type": 0,
+				"channels": 0,
+				"frequency": 70,
+				"q": 0.7,
+				"gain": 3.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 250,
+				"q": 1.0,
+				"gain": -1.5,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 1000,
+				"q": 1.0,
+				"gain": 1.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 2800,
+				"q": 1.2,
+				"gain": 2.5,
+				"color": 0
+			},
+			{
+				"type": 1,
+				"channels": 0,
+				"frequency": 6000,
+				"q": 0.8,
+				"gain": 2.0,
+				"color": 0
+			},
+			{
+				"type": 1,
+				"channels": 0,
+				"frequency": 8000,
+				"q": 0.7,
+				"gain": 1.5,
+				"color": 0
+			}
+		]
+	}
+]

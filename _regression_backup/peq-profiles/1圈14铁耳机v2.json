@@ -1,0 +1,89 @@
+{
+  "name": "1圈14铁耳机v2",
+  "device_type": "iem_hybrid",
+  "brand": "",
+  "model": "v2 声学重设计（依据声学特点.txt）",
+  "preference": "custom_v2",
+  "intensity": 1.0,
+  "custom_bands": [
+    "PK 350 1 0.9",
+    "PK 3000 1 1",
+    "LSC 60 1.5 0.7",
+    "HSC 10000 1 0.7"
+  ],
+  "locked": true,
+  "note": "基于设备声学数据的系统性重设计",
+  "active": false,
+  "created_at": "2026-10-08T20:12:08",
+  "updated_at": "2026-10-08T20:12:08",
+  "target": "四分频频段无缝衔接、人声扎实、超高频延伸可听化",
+  "metrics": "200-500Hz 与 2-4kHz 分频点凹陷补偿至 ±1.5dB；频响偏差 ±2dB（声道匹配 <2dB 基础上）；THD 不劣于原厂（增益全部 ≤1.5dB）",
+  "status": "1DD+14BA+EST，4 分频/4 声孔，Multitube 多路滤波；阻抗 12-20Ω（输出阻抗敏感）；灵敏度 105-108dB/mW；分频点 200-500Hz 与 2-4kHz 存在相位抵消风险（声音脱节/结像模糊）",
+  "advice": "低阻抗高灵敏：搭配 ≥1Ω 输出阻抗前端时先听再调——若前端低频分压增益明显，60Hz 低架减半。",
+  "filters_rationale": [
+    {
+      "freq": 350,
+      "type": "PK",
+      "gain": 1.0,
+      "q": 0.9,
+      "why": "200-500Hz 低段分频点相位抵消的能量补偿（宽 Q 跨越分频区）",
+      "effect": "低频向中频衔接连贯，鼓点到人声不断层"
+    },
+    {
+      "freq": 3000,
+      "type": "PK",
+      "gain": 1.0,
+      "q": 1.0,
+      "why": "2-4kHz 高段分频点相位抵消补偿",
+      "effect": "结像聚焦，人声与高频乐器不'脱节'"
+    },
+    {
+      "freq": 60,
+      "type": "LSC",
+      "gain": 1.5,
+      "q": 0.7,
+      "why": "动圈单元负责的低频氛围强化（其架构强项）",
+      "effect": "低频弹性与氛围感增强"
+    },
+    {
+      "freq": 10000,
+      "type": "HSC",
+      "gain": 1.0,
+      "q": 0.7,
+      "why": "EST 静电单元 50kHz 延伸的可听频段衔接",
+      "effect": "超高频空气感与泛音细节"
+    }
+  ],
+  "preset": {
+    "name": "1圈14铁耳机 v2 - 声学重设计",
+    "preamp": -2.0,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 0,
+        "frequency": 60,
+        "q": 0.7,
+        "gain": 1.5
+      },
+      {
+        "type": 3,
+        "frequency": 350,
+        "q": 0.9,
+        "gain": 1.0
+      },
+      {
+        "type": 3,
+        "frequency": 3000,
+        "q": 1.0,
+        "gain": 1.0
+      },
+      {
+        "type": 1,
+        "frequency": 10000,
+        "q": 0.7,
+        "gain": 1.0
+      }
+    ],
+    "warnings": []
+  }
+}

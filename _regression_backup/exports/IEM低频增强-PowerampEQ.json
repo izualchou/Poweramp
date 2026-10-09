@@ -1,0 +1,49 @@
+[
+	{
+		"name": "IEM低频增强 - 入耳式 IEM（动圈） - 低频增强",
+		"preamp": -5.6,
+		"parametric": true,
+		"bands": [
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 40,
+				"q": 1.0,
+				"gain": 1.8,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 60,
+				"q": 1.0,
+				"gain": -3.0,
+				"color": 0
+			},
+			{
+				"type": 0,
+				"channels": 0,
+				"frequency": 80,
+				"q": 0.7,
+				"gain": 4.8,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 3000,
+				"q": 1.4,
+				"gain": 2.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 9000,
+				"q": 3.0,
+				"gain": -2.5,
+				"color": 0
+			}
+		]
+	}
+]

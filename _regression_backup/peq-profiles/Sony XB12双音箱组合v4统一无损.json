@@ -1,0 +1,238 @@
+{
+  "name": "Sony XB12双音箱组合v4统一无损",
+  "device_type": "portable_speaker",
+  "brand": "",
+  "model": "统一无损音源适配（在线无损 + 本地无损合并方案）",
+  "preference": "custom_v4统一无损",
+  "intensity": 1.0,
+  "locked": true,
+  "active": false,
+  "note": "在线无损 + 本地无损合并方案",
+  "created_at": "2026-10-08T20:12:08",
+  "updated_at": "2026-10-08T20:12:08",
+  "base": "Sony XB12双音箱组合v3",
+  "source": "v4统一无损",
+  "preset": {
+    "name": "Sony XB12双音箱组合 统一无损适配（基准 Sony XB12双音箱组合v3）",
+    "preamp": -2.4,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 20,
+        "q": 4.32,
+        "gain": 1.4
+      },
+      {
+        "type": 3,
+        "frequency": 25,
+        "q": 4.32,
+        "gain": 1.3
+      },
+      {
+        "type": 3,
+        "frequency": 31,
+        "q": 4.32,
+        "gain": 1.2
+      },
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 4.32,
+        "gain": 0.9
+      },
+      {
+        "type": 3,
+        "frequency": 50,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 63,
+        "q": 4.32,
+        "gain": -0.3
+      },
+      {
+        "type": 3,
+        "frequency": 80,
+        "q": 4.32,
+        "gain": -1.3
+      },
+      {
+        "type": 3,
+        "frequency": 100,
+        "q": 4.32,
+        "gain": -2.3
+      },
+      {
+        "type": 3,
+        "frequency": 125,
+        "q": 4.32,
+        "gain": -2.9
+      },
+      {
+        "type": 3,
+        "frequency": 160,
+        "q": 4.32,
+        "gain": -2.4
+      },
+      {
+        "type": 3,
+        "frequency": 200,
+        "q": 4.32,
+        "gain": -1.6
+      },
+      {
+        "type": 3,
+        "frequency": 250,
+        "q": 4.32,
+        "gain": -1.0
+      },
+      {
+        "type": 3,
+        "frequency": 315,
+        "q": 4.32,
+        "gain": -0.6
+      },
+      {
+        "type": 3,
+        "frequency": 400,
+        "q": 4.32,
+        "gain": -0.5
+      },
+      {
+        "type": 3,
+        "frequency": 500,
+        "q": 4.32,
+        "gain": -0.5
+      },
+      {
+        "type": 3,
+        "frequency": 630,
+        "q": 4.32,
+        "gain": -0.7
+      },
+      {
+        "type": 3,
+        "frequency": 800,
+        "q": 4.32,
+        "gain": -1.2
+      },
+      {
+        "type": 3,
+        "frequency": 1000,
+        "q": 4.32,
+        "gain": -1.6
+      },
+      {
+        "type": 3,
+        "frequency": 1250,
+        "q": 4.32,
+        "gain": -1.1
+      },
+      {
+        "type": 3,
+        "frequency": 1600,
+        "q": 4.32,
+        "gain": -0.6
+      },
+      {
+        "type": 3,
+        "frequency": 2000,
+        "q": 4.32,
+        "gain": -0.3
+      },
+      {
+        "type": 3,
+        "frequency": 2500,
+        "q": 4.32,
+        "gain": -0.2
+      },
+      {
+        "type": 3,
+        "frequency": 3150,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 4000,
+        "q": 4.32,
+        "gain": -0.2
+      },
+      {
+        "type": 3,
+        "frequency": 5000,
+        "q": 4.32,
+        "gain": -0.3
+      },
+      {
+        "type": 3,
+        "frequency": 6300,
+        "q": 4.32,
+        "gain": -0.7
+      },
+      {
+        "type": 3,
+        "frequency": 8000,
+        "q": 4.32,
+        "gain": -1.9
+      },
+      {
+        "type": 3,
+        "frequency": 10000,
+        "q": 4.32,
+        "gain": -0.6
+      },
+      {
+        "type": 3,
+        "frequency": 12500,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 16000,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 20000,
+        "q": 4.32,
+        "gain": 0.7
+      }
+    ],
+    "warnings": [
+      "警告: 频段数 31 超过建议上限 16（主应用最多 128 段）"
+    ]
+  },
+  "source_class": "lossless",
+  "hi_res_capable": false,
+  "assumed": {
+    "codec": "FLAC/ALAC ≥ 16bit/44.1kHz",
+    "loudness": "service-dependent / -14 to -16 LUFS",
+    "bit_depth": "16-24",
+    "sample_rate": "44.1k-192k"
+  },
+  "service_preamp_offsets_db": {
+    "Apple Music Lossless": -0.5,
+    "Tidal HiFi": 0.0,
+    "Tidal HiFi Plus (MQA)": 0.0,
+    "Qobuz Studio": 0.0,
+    "Amazon Music HD": 0.0,
+    "QQ Music 无损": 0.0,
+    "本地 FLAC（无归一化）": 0.0,
+    "本地 ALAC": 0.0,
+    "本地 DSD/DSF": 0.0
+  },
+  "target": "物理受限设备的统一无损方案：维持 v3 不变（便携音箱物理极限不随音源改变）。若内容确为 24/96 Hi-Res，可在 Poweramp GUI 内手动抬 12.5-20k 段 +0.3dB。",
+  "listen_diff": "优化前/后差异极小：便携蓝牙音箱的频响边界由单元物理决定；统一无损方案不引入任何额外修改，避免对物理受限设备过度处理。",
+  "conditions": [
+    "任一无损源（在线/本地）——本设备频响边界不因音源改善",
+    "推荐满电使用（低电量音量衰减属硬件，非 PEQ 范畴）",
+    "听音距离 ≤ 1m（被动辐射器耦合需近场）"
+  ],
+  "deltas": []
+}

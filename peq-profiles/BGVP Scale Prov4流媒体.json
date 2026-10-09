@@ -1,0 +1,259 @@
+{
+  "name": "BGVP Scale Prov4流媒体",
+  "device_type": "iem_hybrid",
+  "brand": "",
+  "model": "流媒体音源适配（Ogg Vorbis / AAC 有损编码适配）",
+  "preference": "custom_v4流媒体",
+  "intensity": 1.0,
+  "locked": true,
+  "active": false,
+  "note": "Ogg Vorbis / AAC 有损编码适配",
+  "created_at": "2026-10-08T20:12:31",
+  "updated_at": "2026-10-08T20:12:31",
+  "base": "BGVP Scale Prov3",
+  "source": "v4流媒体",
+  "preset": {
+    "name": "BGVP Scale Pro 流媒体适配（基准 BGVP Scale Prov3）",
+    "preamp": -3.2,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 20,
+        "q": 4.32,
+        "gain": 1.4
+      },
+      {
+        "type": 3,
+        "frequency": 25,
+        "q": 4.32,
+        "gain": 1.4
+      },
+      {
+        "type": 3,
+        "frequency": 31,
+        "q": 4.32,
+        "gain": 1.4
+      },
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 4.32,
+        "gain": 1.9
+      },
+      {
+        "type": 3,
+        "frequency": 50,
+        "q": 4.32,
+        "gain": 1.8
+      },
+      {
+        "type": 3,
+        "frequency": 63,
+        "q": 4.32,
+        "gain": 1.5
+      },
+      {
+        "type": 3,
+        "frequency": 80,
+        "q": 4.32,
+        "gain": 1.0
+      },
+      {
+        "type": 3,
+        "frequency": 100,
+        "q": 4.32,
+        "gain": 0.6
+      },
+      {
+        "type": 3,
+        "frequency": 125,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 160,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 200,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 250,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 315,
+        "q": 4.32,
+        "gain": 0.8
+      },
+      {
+        "type": 3,
+        "frequency": 400,
+        "q": 4.32,
+        "gain": 1.0
+      },
+      {
+        "type": 3,
+        "frequency": 500,
+        "q": 4.32,
+        "gain": 0.8
+      },
+      {
+        "type": 3,
+        "frequency": 630,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 800,
+        "q": 4.32,
+        "gain": 0.2
+      },
+      {
+        "type": 3,
+        "frequency": 1000,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 1250,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 1600,
+        "q": 4.32,
+        "gain": -0.3
+      },
+      {
+        "type": 3,
+        "frequency": 2000,
+        "q": 4.32,
+        "gain": -0.7
+      },
+      {
+        "type": 3,
+        "frequency": 2500,
+        "q": 4.32,
+        "gain": -0.9
+      },
+      {
+        "type": 3,
+        "frequency": 3150,
+        "q": 4.32,
+        "gain": -0.6
+      },
+      {
+        "type": 3,
+        "frequency": 4000,
+        "q": 4.32,
+        "gain": -0.2
+      },
+      {
+        "type": 3,
+        "frequency": 5000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 6300,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 8000,
+        "q": 4.32,
+        "gain": 0.9
+      },
+      {
+        "type": 3,
+        "frequency": 10000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 12500,
+        "q": 4.32,
+        "gain": -0.3
+      },
+      {
+        "type": 3,
+        "frequency": 16000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 20000,
+        "q": 4.32,
+        "gain": 0.0
+      }
+    ],
+    "warnings": [
+      "警告: 频段数 31 超过建议上限 16（主应用最多 128 段）"
+    ]
+  },
+  "source_class": "lossy",
+  "hi_res_capable": true,
+  "assumed": {
+    "codec": "Ogg Vorbis 320kbps / AAC 256kbps",
+    "loudness": "-14 to -16 LUFS (service-dependent)",
+    "bit_depth": "n/a",
+    "sample_rate": "44.1k-48k"
+  },
+  "service_preamp_offsets_db": {},
+  "target": "10-12.5kHz 正增益收敛防伪影揭示（'明亮不刺'特质易被编码毛刺干扰），16-20kHz 归零。",
+  "listen_diff": "优化前：流媒体下明亮感中混入毛刺；优化后：恢复其招牌的顺滑耐听，人声厚度与分频点结像保持。",
+  "conditions": [
+    "FLAC/ALAC ≥ 16bit/44.1kHz（CD 起步）",
+    "前端输出阻抗 ≤ 2Ω（17Ω 标称 + 113dB/mW 极敏）",
+    "音量 ≤ 60%（底噪敏感）"
+  ],
+  "deltas": [
+    {
+      "freq": 20,
+      "old": 2.0,
+      "new": 1.4
+    },
+    {
+      "freq": 25,
+      "old": 2.0,
+      "new": 1.4
+    },
+    {
+      "freq": 31,
+      "old": 2.0,
+      "new": 1.4
+    },
+    {
+      "freq": 10000,
+      "old": 0.5,
+      "new": 0.0
+    },
+    {
+      "freq": 12500,
+      "old": 0.2,
+      "new": -0.3
+    },
+    {
+      "freq": 16000,
+      "old": 0.1,
+      "new": 0.0
+    }
+  ]
+}

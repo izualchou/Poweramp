@@ -1,0 +1,249 @@
+{
+  "name": "Sony MDR-1ABTv4流媒体",
+  "device_type": "bluetooth_headphone",
+  "brand": "",
+  "model": "流媒体音源适配（Ogg Vorbis / AAC 有损编码适配）",
+  "preference": "custom_v4流媒体",
+  "intensity": 1.0,
+  "locked": true,
+  "active": false,
+  "note": "Ogg Vorbis / AAC 有损编码适配",
+  "created_at": "2026-10-08T20:12:31",
+  "updated_at": "2026-10-08T20:12:31",
+  "base": "Sony MDR-1ABTv3",
+  "source": "v4流媒体",
+  "preset": {
+    "name": "Sony MDR-1ABT 流媒体适配（基准 Sony MDR-1ABTv3）",
+    "preamp": -3.0,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 20,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 25,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 31,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 50,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 63,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 80,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 100,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 125,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 160,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 200,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 250,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 315,
+        "q": 4.32,
+        "gain": 0.2
+      },
+      {
+        "type": 3,
+        "frequency": 400,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 500,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 630,
+        "q": 4.32,
+        "gain": 0.9
+      },
+      {
+        "type": 3,
+        "frequency": 800,
+        "q": 4.32,
+        "gain": 1.4
+      },
+      {
+        "type": 3,
+        "frequency": 1000,
+        "q": 4.32,
+        "gain": 1.7
+      },
+      {
+        "type": 3,
+        "frequency": 1250,
+        "q": 4.32,
+        "gain": 1.7
+      },
+      {
+        "type": 3,
+        "frequency": 1600,
+        "q": 4.32,
+        "gain": 1.6
+      },
+      {
+        "type": 3,
+        "frequency": 2000,
+        "q": 4.32,
+        "gain": 1.5
+      },
+      {
+        "type": 3,
+        "frequency": 2500,
+        "q": 4.32,
+        "gain": 1.1
+      },
+      {
+        "type": 3,
+        "frequency": 3150,
+        "q": 4.32,
+        "gain": 0.8
+      },
+      {
+        "type": 3,
+        "frequency": 4000,
+        "q": 4.32,
+        "gain": 0.7
+      },
+      {
+        "type": 3,
+        "frequency": 5000,
+        "q": 4.32,
+        "gain": 0.7
+      },
+      {
+        "type": 3,
+        "frequency": 6300,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 8000,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 10000,
+        "q": 4.32,
+        "gain": -0.2
+      },
+      {
+        "type": 3,
+        "frequency": 12500,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 16000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 20000,
+        "q": 4.32,
+        "gain": 0.0
+      }
+    ],
+    "warnings": [
+      "警告: 频段数 31 超过建议上限 16（主应用最多 128 段）"
+    ]
+  },
+  "source_class": "lossy",
+  "hi_res_capable": false,
+  "assumed": {
+    "codec": "Ogg Vorbis 320kbps / AAC 256kbps",
+    "loudness": "-14 to -16 LUFS (service-dependent)",
+    "bit_depth": "n/a",
+    "sample_rate": "44.1k-48k"
+  },
+  "service_preamp_offsets_db": {},
+  "target": "1-2kHz 人声推前段不受流媒体编码影响（人声基频不丢失），10-16kHz DSEE/LDAC 频段中 ≥16k 归零（编码剔除区，徒增伪影），12.5kHz 段轻收，5kHz 齿音下缘适度收敛防 Ogg 编码器预回声揭示。",
+  "listen_diff": "优化前：流媒体下 5kHz 镲片/人声边缘偶有'毛刺'、16-20kHz 增益只放大嘶声；优化后：齿音下缘顺滑，超高频不再嘶叫，1-2kHz 人声前移段在两种音源下均稳定。",
+  "conditions": [
+    "在线无损 / 本地无损——BT 4.0 LDAC 已是瓶颈",
+    "推荐有线模式（24Ω/98dB 单元可被手机直推）",
+    "户外需注意全包裹隔音（设计权衡，无法通过 EQ 解决）"
+  ],
+  "deltas": [
+    {
+      "freq": 10000,
+      "old": 0.3,
+      "new": -0.2
+    },
+    {
+      "freq": 12500,
+      "old": 0.4,
+      "new": -0.1
+    },
+    {
+      "freq": 16000,
+      "old": 0.4,
+      "new": 0.0
+    },
+    {
+      "freq": 20000,
+      "old": 0.5,
+      "new": 0.0
+    }
+  ]
+}

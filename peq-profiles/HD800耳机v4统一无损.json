@@ -1,0 +1,254 @@
+{
+  "name": "HD800耳机v4统一无损",
+  "device_type": "open_headphone",
+  "brand": "",
+  "model": "统一无损音源适配（在线无损 + 本地无损合并方案）",
+  "preference": "custom_v4统一无损",
+  "intensity": 1.0,
+  "locked": true,
+  "active": false,
+  "note": "在线无损 + 本地无损合并方案",
+  "created_at": "2026-10-08T20:12:31",
+  "updated_at": "2026-10-08T20:12:31",
+  "base": "HD800耳机v3",
+  "source": "v4统一无损",
+  "preset": {
+    "name": "HD800耳机 统一无损适配（基准 HD800耳机v3）",
+    "preamp": -9.2,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 20,
+        "q": 4.32,
+        "gain": 4.5
+      },
+      {
+        "type": 3,
+        "frequency": 25,
+        "q": 4.32,
+        "gain": 4.8
+      },
+      {
+        "type": 3,
+        "frequency": 31,
+        "q": 4.32,
+        "gain": 5.5
+      },
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 4.32,
+        "gain": 5.9
+      },
+      {
+        "type": 3,
+        "frequency": 50,
+        "q": 4.32,
+        "gain": 5.4
+      },
+      {
+        "type": 3,
+        "frequency": 63,
+        "q": 4.32,
+        "gain": 4.5
+      },
+      {
+        "type": 3,
+        "frequency": 80,
+        "q": 4.32,
+        "gain": 3.6
+      },
+      {
+        "type": 3,
+        "frequency": 100,
+        "q": 4.32,
+        "gain": 2.6
+      },
+      {
+        "type": 3,
+        "frequency": 125,
+        "q": 4.32,
+        "gain": 1.7
+      },
+      {
+        "type": 3,
+        "frequency": 160,
+        "q": 4.32,
+        "gain": 0.8
+      },
+      {
+        "type": 3,
+        "frequency": 200,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 250,
+        "q": 4.32,
+        "gain": 0.2
+      },
+      {
+        "type": 3,
+        "frequency": 315,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 400,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 500,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 630,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 800,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 1000,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 1250,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 1600,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 2000,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 2500,
+        "q": 4.32,
+        "gain": -0.2
+      },
+      {
+        "type": 3,
+        "frequency": 3150,
+        "q": 4.32,
+        "gain": -0.4
+      },
+      {
+        "type": 3,
+        "frequency": 4000,
+        "q": 4.32,
+        "gain": -0.8
+      },
+      {
+        "type": 3,
+        "frequency": 5000,
+        "q": 4.32,
+        "gain": -1.3
+      },
+      {
+        "type": 3,
+        "frequency": 6300,
+        "q": 4.32,
+        "gain": -2.9
+      },
+      {
+        "type": 3,
+        "frequency": 8000,
+        "q": 4.32,
+        "gain": -0.6
+      },
+      {
+        "type": 3,
+        "frequency": 10000,
+        "q": 4.32,
+        "gain": 0.2
+      },
+      {
+        "type": 3,
+        "frequency": 12500,
+        "q": 4.32,
+        "gain": 0.8
+      },
+      {
+        "type": 3,
+        "frequency": 16000,
+        "q": 4.32,
+        "gain": 1.1
+      },
+      {
+        "type": 3,
+        "frequency": 20000,
+        "q": 4.32,
+        "gain": 1.2
+      }
+    ],
+    "warnings": [
+      "警告: 频段数 31 超过建议上限 16（主应用最多 128 段）"
+    ]
+  },
+  "source_class": "lossless",
+  "hi_res_capable": true,
+  "assumed": {
+    "codec": "FLAC/ALAC ≥ 16bit/44.1kHz",
+    "loudness": "service-dependent / -14 to -16 LUFS",
+    "bit_depth": "16-24",
+    "sample_rate": "44.1k-192k"
+  },
+  "service_preamp_offsets_db": {
+    "Apple Music Lossless": -0.5,
+    "Tidal HiFi": 0.0,
+    "Tidal HiFi Plus (MQA)": 0.0,
+    "Qobuz Studio": 0.0,
+    "Amazon Music HD": 0.0,
+    "QQ Music 无损": 0.0,
+    "本地 FLAC（无归一化）": 0.0,
+    "本地 ALAC": 0.0,
+    "本地 DSD/DSF": 0.0
+  },
+  "target": "无损下完整保留低频平台（+5.9dB）与 6.5k 窄带收敛（-2.5dB），12.5-20kHz +0.3dB 释放开放式大耳标志性的空气感与堂音。",
+  "listen_diff": "优化前：声场通透但极高频略保守；优化后：完整 51kHz 延伸在无损下可闻，0.02% THD 余量内低频平台无失真（Hi-Res 母带可让低频量感更明显）。",
+  "conditions": [
+    "FLAC ≥ 16bit/44.1kHz；推荐 24bit/96kHz（51kHz 单元延伸需要 Hi-Res 内容）",
+    "耳放输出阻抗 ≤ 10Ω（300Ω 标称需优质耳放）",
+    "110Hz 处 650Ω 阻抗谐振峰附近低频会被某些耳放自然抬升——若低频过隆，把 110Hz 段 -2dB"
+  ],
+  "deltas": [
+    {
+      "freq": 12500,
+      "old": 0.5,
+      "new": 0.8
+    },
+    {
+      "freq": 16000,
+      "old": 0.8,
+      "new": 1.1
+    },
+    {
+      "freq": 20000,
+      "old": 0.9,
+      "new": 1.2
+    }
+  ]
+}

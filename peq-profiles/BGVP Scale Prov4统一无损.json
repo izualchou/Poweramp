@@ -1,0 +1,249 @@
+{
+  "name": "BGVP Scale Prov4统一无损",
+  "device_type": "iem_hybrid",
+  "brand": "",
+  "model": "统一无损音源适配（在线无损 + 本地无损合并方案）",
+  "preference": "custom_v4统一无损",
+  "intensity": 1.0,
+  "locked": true,
+  "active": false,
+  "note": "在线无损 + 本地无损合并方案",
+  "created_at": "2026-10-08T20:12:31",
+  "updated_at": "2026-10-08T20:12:31",
+  "base": "BGVP Scale Prov3",
+  "source": "v4统一无损",
+  "preset": {
+    "name": "BGVP Scale Pro 统一无损适配（基准 BGVP Scale Prov3）",
+    "preamp": -3.5,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 20,
+        "q": 4.32,
+        "gain": 2.0
+      },
+      {
+        "type": 3,
+        "frequency": 25,
+        "q": 4.32,
+        "gain": 2.0
+      },
+      {
+        "type": 3,
+        "frequency": 31,
+        "q": 4.32,
+        "gain": 2.0
+      },
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 4.32,
+        "gain": 1.9
+      },
+      {
+        "type": 3,
+        "frequency": 50,
+        "q": 4.32,
+        "gain": 1.8
+      },
+      {
+        "type": 3,
+        "frequency": 63,
+        "q": 4.32,
+        "gain": 1.5
+      },
+      {
+        "type": 3,
+        "frequency": 80,
+        "q": 4.32,
+        "gain": 1.0
+      },
+      {
+        "type": 3,
+        "frequency": 100,
+        "q": 4.32,
+        "gain": 0.6
+      },
+      {
+        "type": 3,
+        "frequency": 125,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 160,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 200,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 250,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 315,
+        "q": 4.32,
+        "gain": 0.8
+      },
+      {
+        "type": 3,
+        "frequency": 400,
+        "q": 4.32,
+        "gain": 1.0
+      },
+      {
+        "type": 3,
+        "frequency": 500,
+        "q": 4.32,
+        "gain": 0.8
+      },
+      {
+        "type": 3,
+        "frequency": 630,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 800,
+        "q": 4.32,
+        "gain": 0.2
+      },
+      {
+        "type": 3,
+        "frequency": 1000,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 1250,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 1600,
+        "q": 4.32,
+        "gain": -0.3
+      },
+      {
+        "type": 3,
+        "frequency": 2000,
+        "q": 4.32,
+        "gain": -0.7
+      },
+      {
+        "type": 3,
+        "frequency": 2500,
+        "q": 4.32,
+        "gain": -0.9
+      },
+      {
+        "type": 3,
+        "frequency": 3150,
+        "q": 4.32,
+        "gain": -0.6
+      },
+      {
+        "type": 3,
+        "frequency": 4000,
+        "q": 4.32,
+        "gain": -0.2
+      },
+      {
+        "type": 3,
+        "frequency": 5000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 6300,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 8000,
+        "q": 4.32,
+        "gain": 0.9
+      },
+      {
+        "type": 3,
+        "frequency": 10000,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 12500,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 16000,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 20000,
+        "q": 4.32,
+        "gain": 0.0
+      }
+    ],
+    "warnings": [
+      "警告: 频段数 31 超过建议上限 16（主应用最多 128 段）"
+    ]
+  },
+  "source_class": "lossless",
+  "hi_res_capable": true,
+  "assumed": {
+    "codec": "FLAC/ALAC ≥ 16bit/44.1kHz",
+    "loudness": "service-dependent / -14 to -16 LUFS",
+    "bit_depth": "16-24",
+    "sample_rate": "44.1k-192k"
+  },
+  "service_preamp_offsets_db": {
+    "Apple Music Lossless": -0.5,
+    "Tidal HiFi": 0.0,
+    "Tidal HiFi Plus (MQA)": 0.0,
+    "Qobuz Studio": 0.0,
+    "Amazon Music HD": 0.0,
+    "QQ Music 无损": 0.0,
+    "本地 FLAC（无归一化）": 0.0,
+    "本地 ALAC": 0.0,
+    "本地 DSD/DSF": 0.0
+  },
+  "target": "无损下 12.5-20kHz +0.3dB 发挥 HVEK 动铁高频延伸，2.5kHz 分频点收敛在所有无损源下稳定。",
+  "listen_diff": "优化前：明亮但极高频保守；优化后：亮度延伸更完整，齿音控制依旧良好。",
+  "conditions": [
+    "FLAC/ALAC ≥ 16bit/44.1kHz（CD 起步）",
+    "前端输出阻抗 ≤ 2Ω（17Ω 标称 + 113dB/mW 极敏）",
+    "音量 ≤ 60%（底噪敏感）"
+  ],
+  "deltas": [
+    {
+      "freq": 12500,
+      "old": 0.2,
+      "new": 0.5
+    },
+    {
+      "freq": 16000,
+      "old": 0.1,
+      "new": 0.4
+    }
+  ]
+}

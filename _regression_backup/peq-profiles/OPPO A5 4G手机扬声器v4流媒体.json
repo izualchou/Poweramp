@@ -1,0 +1,227 @@
+{
+  "name": "OPPO A5 4G手机扬声器v4流媒体",
+  "device_type": "phone_speaker",
+  "brand": "",
+  "model": "流媒体音源适配（Ogg Vorbis / AAC 有损编码适配）",
+  "preference": "custom_v4流媒体",
+  "intensity": 1.0,
+  "locked": true,
+  "active": false,
+  "note": "Ogg Vorbis / AAC 有损编码适配",
+  "created_at": "2026-10-08T20:12:08",
+  "updated_at": "2026-10-08T20:12:08",
+  "base": "OPPO A5 4G手机扬声器v3",
+  "source": "v4流媒体",
+  "preset": {
+    "name": "OPPO A5 4G手机扬声器 流媒体适配（基准 OPPO A5 4G手机扬声器v3）",
+    "preamp": -1.2,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 20,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 25,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 31,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 50,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 63,
+        "q": 4.32,
+        "gain": -0.0
+      },
+      {
+        "type": 3,
+        "frequency": 80,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 100,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 125,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 160,
+        "q": 4.32,
+        "gain": -0.2
+      },
+      {
+        "type": 3,
+        "frequency": 200,
+        "q": 4.32,
+        "gain": -0.4
+      },
+      {
+        "type": 3,
+        "frequency": 250,
+        "q": 4.32,
+        "gain": -0.4
+      },
+      {
+        "type": 3,
+        "frequency": 315,
+        "q": 4.32,
+        "gain": -0.3
+      },
+      {
+        "type": 3,
+        "frequency": 400,
+        "q": 4.32,
+        "gain": -0.1
+      },
+      {
+        "type": 3,
+        "frequency": 500,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 630,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 800,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 1000,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 1250,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 1600,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 2000,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 2500,
+        "q": 4.32,
+        "gain": 0.4
+      },
+      {
+        "type": 3,
+        "frequency": 3150,
+        "q": 4.32,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 4000,
+        "q": 4.32,
+        "gain": 0.3
+      },
+      {
+        "type": 3,
+        "frequency": 5000,
+        "q": 4.32,
+        "gain": 0.2
+      },
+      {
+        "type": 3,
+        "frequency": 6300,
+        "q": 4.32,
+        "gain": 0.1
+      },
+      {
+        "type": 3,
+        "frequency": 8000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 10000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 12500,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 16000,
+        "q": 4.32,
+        "gain": 0.0
+      },
+      {
+        "type": 3,
+        "frequency": 20000,
+        "q": 4.32,
+        "gain": 0.0
+      }
+    ],
+    "warnings": [
+      "警告: 频段数 31 超过建议上限 16（主应用最多 128 段）"
+    ]
+  },
+  "source_class": "lossy",
+  "hi_res_capable": false,
+  "assumed": {
+    "codec": "Ogg Vorbis 320kbps / AAC 256kbps",
+    "loudness": "-14 to -16 LUFS (service-dependent)",
+    "bit_depth": "n/a",
+    "sample_rate": "44.1k-48k"
+  },
+  "service_preamp_offsets_db": {},
+  "target": "v3 干预已是 ±0.5dB 最小级且无正增益位于伪影区——完全不变，流媒体与本地可共用。",
+  "listen_diff": "无变化：该设备无需音源变体，保留一套 v3 即可。",
+  "conditions": [
+    "任一无损源——本设备 v3 干预幅度已极小",
+    "通道平衡向顶部扬声器偏置 1-2 格（系统设置）"
+  ],
+  "deltas": []
+}

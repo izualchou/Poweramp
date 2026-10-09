@@ -1,0 +1,89 @@
+{
+  "name": "BGVP Scale Prov2",
+  "device_type": "iem_hybrid",
+  "brand": "",
+  "model": "v2 声学重设计（依据声学特点.txt）",
+  "preference": "custom_v2",
+  "intensity": 1.0,
+  "custom_bands": [
+    "LSC 80 2 0.7",
+    "PK 400 1 1",
+    "PK 2500 -1 1.4",
+    "PK 8000 1 2"
+  ],
+  "locked": true,
+  "note": "基于设备声学数据的系统性重设计",
+  "active": false,
+  "created_at": "2026-10-08T20:12:08",
+  "updated_at": "2026-10-08T20:12:08",
+  "target": "保持耐听均衡，补下潜与中频厚度，稳固分频点结像",
+  "metrics": "2-3kHz 分频区平整度 ±1.5dB；THD 维持 <1% 红线内（增益 ≤2dB）；低频提升幅度适配低输出阻抗前端的自然低频增益",
+  "status": "10mm DC 涂层动圈+HVEK 定制动铁；双音腔+电子/物理分频；17Ω、113dB/mW（极敏）；THD<1%；分频点 2-3kHz 相位未对齐时 200Hz-2kHz 结像偏移；低阻前端下动圈阻抗曲线与输出阻抗形成分压→低频增益",
+  "advice": "113dB 极敏：底噪大的前端建议音量 60% 以下使用；preamp 已留余量，若仍削波先查前端增益而非 EQ。",
+  "filters_rationale": [
+    {
+      "freq": 80,
+      "type": "LSC",
+      "gain": 2.0,
+      "q": 0.7,
+      "why": "下潜补偿；对低输出阻抗前端的天然低频增益叠加，故取保守值",
+      "effect": "下潜沉得下去、鼓点清晰"
+    },
+    {
+      "freq": 400,
+      "type": "PK",
+      "gain": 1.0,
+      "q": 1.0,
+      "why": "用户反馈的人声厚度稍薄（200Hz-2k 结像偏移的听感结果）",
+      "effect": "人声厚度与密度改善"
+    },
+    {
+      "freq": 2500,
+      "type": "PK",
+      "gain": -1.0,
+      "q": 1.4,
+      "why": "2-3kHz 分频点能量堆积收敛，稳固结像（相位问题的能量域补偿）",
+      "effect": "人声定位居中不飘、齿音控制保持"
+    },
+    {
+      "freq": 8000,
+      "type": "PK",
+      "gain": 1.0,
+      "q": 2.0,
+      "why": "HVEK 动铁负责的高频衔接区微亮",
+      "effect": "明亮不刺耳的特质保持"
+    }
+  ],
+  "preset": {
+    "name": "BGVP Scale Pro v2 - 声学重设计",
+    "preamp": -2.5,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 0,
+        "frequency": 80,
+        "q": 0.7,
+        "gain": 2.0
+      },
+      {
+        "type": 3,
+        "frequency": 400,
+        "q": 1.0,
+        "gain": 1.0
+      },
+      {
+        "type": 3,
+        "frequency": 2500,
+        "q": 1.4,
+        "gain": -1.0
+      },
+      {
+        "type": 3,
+        "frequency": 8000,
+        "q": 2.0,
+        "gain": 1.0
+      }
+    ],
+    "warnings": []
+  }
+}

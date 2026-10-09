@@ -1,0 +1,41 @@
+[
+	{
+		"name": "Sony MDR-1ABT v2 - 声学重设计",
+		"preamp": -2.3,
+		"parametric": true,
+		"bands": [
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 1000,
+				"q": 1.0,
+				"gain": 1.5,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 2000,
+				"q": 1.2,
+				"gain": 1.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 5000,
+				"q": 1.4,
+				"gain": 0.5,
+				"color": 0
+			},
+			{
+				"type": 1,
+				"channels": 0,
+				"frequency": 12000,
+				"q": 0.7,
+				"gain": 0.5,
+				"color": 0
+			}
+		]
+	}
+]

@@ -1,0 +1,74 @@
+{
+  "name": "OPPO A5 4G手机扬声器v2",
+  "device_type": "phone_speaker",
+  "brand": "",
+  "model": "v2 声学重设计（依据声学特点.txt）",
+  "preference": "custom_v2",
+  "intensity": 1.0,
+  "custom_bands": [
+    "PK 800 0.5 1",
+    "PK 3000 0.5 1.4",
+    "PK 250 -0.5 1"
+  ],
+  "locked": true,
+  "note": "基于设备声学数据的系统性重设计",
+  "active": false,
+  "created_at": "2026-10-08T20:12:30",
+  "updated_at": "2026-10-08T20:12:30",
+  "target": "轻度精修保持原厂饱满，人声对话清晰度微增",
+  "metrics": "干预幅度 ≤1dB（保留原厂调音）；300% 软件增益建议 ≤200% 使用（防单元失真）；底部>顶部的通道音量差（声像偏移）需系统设置配合",
+  "status": "顶部+底部双扬声器（顶部非降级听筒，全频段输出）；Dolby Atmos 虚拟化上混；底部音量显著大于顶部；300% 软件音量增强",
+  "advice": "通道音量差：Dolby Atmos 或辅助功能中的左右平衡向顶部扬声器侧偏置 1-2 格。",
+  "filters_rationale": [
+    {
+      "freq": 800,
+      "type": "PK",
+      "gain": 0.5,
+      "q": 1.0,
+      "why": "影音/通话场景的人声对话频段微抬",
+      "effect": "台词可懂度提升"
+    },
+    {
+      "freq": 3000,
+      "type": "PK",
+      "gain": 0.5,
+      "q": 1.4,
+      "why": "清晰度微调（保持 ±1dB 内最小干预原则）",
+      "effect": "乐器亮度与细节略增"
+    },
+    {
+      "freq": 250,
+      "type": "PK",
+      "gain": -0.5,
+      "q": 1.0,
+      "why": "轻度箱染收敛",
+      "effect": "低频干净度微增"
+    }
+  ],
+  "preset": {
+    "name": "OPPO A5 4G手机扬声器 v2 - 声学重设计",
+    "preamp": -1.0,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 250,
+        "q": 1.0,
+        "gain": -0.5
+      },
+      {
+        "type": 3,
+        "frequency": 800,
+        "q": 1.0,
+        "gain": 0.5
+      },
+      {
+        "type": 3,
+        "frequency": 3000,
+        "q": 1.4,
+        "gain": 0.5
+      }
+    ],
+    "warnings": []
+  }
+}

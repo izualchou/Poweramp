@@ -1,0 +1,89 @@
+{
+  "name": "Sony MDR-1ABTv2",
+  "device_type": "bluetooth_headphone",
+  "brand": "",
+  "model": "v2 声学重设计（依据声学特点.txt）",
+  "preference": "custom_v2",
+  "intensity": 1.0,
+  "custom_bands": [
+    "PK 1000 1.5 1",
+    "PK 2000 1 1.2",
+    "PK 5000 0.5 1.4",
+    "HSC 12000 0.5 0.7"
+  ],
+  "locked": true,
+  "note": "基于设备声学数据的系统性重设计",
+  "active": false,
+  "created_at": "2026-10-08T20:12:08",
+  "updated_at": "2026-10-08T20:12:08",
+  "target": "把万金油'均衡耐听'底子的人声从靠后（Recessed vocals）拉回居中前位，同时保留 LDAC/DSEE 带来的高频延伸",
+  "metrics": "1-2kHz 人声核心区 +1.5dB（推前中频）；4-6.3kHz 乐器存在感 +0.5dB（不引入齿音）；10-16kHz +0.5dB 释放 LDAC/DSEE 频段；全部 ≤1.5dB 守 24Ω/98dB 单元裕量",
+  "status": "40mm 镀铝液晶高分子振膜；24Ω @1kHz；98 dB/mW 灵敏度；4-100,000Hz（有线）/20-20,000Hz（BT）；BT4.0+LDAC+aptX+NFC；DSEE 数字声音增强引擎；100mW 容量；~300g；封闭式；用户评价'低频干净利落、中频中正不突出、高频控制不出齿音'，但 What Hi-Fi 直言'Recessed vocals'、'Lack get-up-and-go'。",
+  "advice": "顺序：1kHz→2kHz→5kHz 渐进听感；如发现齿音先降 5kHz 段。户外/通勤建议另存副本将 125-200Hz 收敛 -0.5dB 防全包裹共振；有线 vs LDAC 模式下曲线一致（DSEE 仅 BT 模式下有效）。",
+  "filters_rationale": [
+    {
+      "freq": 1000,
+      "type": "PK",
+      "gain": 1.5,
+      "q": 1.0,
+      "why": "1kHz 'Recessed vocals' 核心：人声基频区被'中正'调音压到靠后",
+      "effect": "人声从靠后移至居中前位，存在感显著增强"
+    },
+    {
+      "freq": 2000,
+      "type": "PK",
+      "gain": 1.0,
+      "q": 1.2,
+      "why": "2kHz 人声频段上缘（前齿音区之前），补偿人声胸腔/口型感",
+      "effect": "人声密度与清晰度提升（与 1kHz 配合形成宽带抬升）"
+    },
+    {
+      "freq": 5000,
+      "type": "PK",
+      "gain": 0.5,
+      "q": 1.4,
+      "why": "5kHz 乐器存在感区（弦乐泛音、人声齿音下缘），微抬不引入齿音",
+      "effect": "乐器泛音丰满、整体听感更'抓人'"
+    },
+    {
+      "freq": 12000,
+      "type": "HSC",
+      "gain": 0.5,
+      "q": 0.7,
+      "why": "12kHz 补偿 LDAC/DSEE 释放的高频延伸（万金油调音本就在此处保守）",
+      "effect": "高频空气感与声场微张，保持'控制不出齿音'的优势"
+    }
+  ],
+  "preset": {
+    "name": "Sony MDR-1ABT v2 - 声学重设计",
+    "preamp": -2.3,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 1000,
+        "q": 1.0,
+        "gain": 1.5
+      },
+      {
+        "type": 3,
+        "frequency": 2000,
+        "q": 1.2,
+        "gain": 1.0
+      },
+      {
+        "type": 3,
+        "frequency": 5000,
+        "q": 1.4,
+        "gain": 0.5
+      },
+      {
+        "type": 1,
+        "frequency": 12000,
+        "q": 0.7,
+        "gain": 0.5
+      }
+    ],
+    "warnings": []
+  }
+}

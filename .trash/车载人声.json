@@ -1,0 +1,63 @@
+{
+  "name": "车载人声",
+  "device_type": "car_audio",
+  "brand": "",
+  "model": "",
+  "preference": "vocal_forward,road_noise_high",
+  "intensity": 1.0,
+  "custom_bands": [],
+  "note": "演示档案2：高速通勤",
+  "active": false,
+  "created_at": "2026-10-06T22:45:23",
+  "updated_at": "2026-10-06T22:45:57",
+  "preset": {
+    "name": "车载人声 - 车载音响 - 人声突出 + 高速路噪补偿（车载专用）",
+    "preamp": -4.0,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 45,
+        "q": 1.0,
+        "gain": -3.0
+      },
+      {
+        "type": 0,
+        "frequency": 70,
+        "q": 0.7,
+        "gain": 3.0
+      },
+      {
+        "type": 3,
+        "frequency": 250,
+        "q": 1.0,
+        "gain": -1.5
+      },
+      {
+        "type": 3,
+        "frequency": 1000,
+        "q": 1.0,
+        "gain": 1.0
+      },
+      {
+        "type": 3,
+        "frequency": 2800,
+        "q": 1.2,
+        "gain": 2.5
+      },
+      {
+        "type": 1,
+        "frequency": 6000,
+        "q": 0.8,
+        "gain": 2.0
+      },
+      {
+        "type": 1,
+        "frequency": 8000,
+        "q": 0.7,
+        "gain": 1.5
+      }
+    ],
+    "warnings": []
+  }
+}

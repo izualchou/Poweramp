@@ -1,0 +1,104 @@
+{
+  "name": "HD800耳机v2",
+  "device_type": "open_headphone",
+  "brand": "",
+  "model": "v2 声学重设计（依据声学特点.txt）",
+  "preference": "custom_v2",
+  "intensity": 1.0,
+  "custom_bands": [
+    "LSC 110 4 0.7",
+    "PK 40 2 1.2",
+    "PK 6500 -2.5 4.32",
+    "PK 5000 -1 1.41",
+    "HSC 10000 1 0.7"
+  ],
+  "locked": true,
+  "note": "基于设备声学数据的系统性重设计",
+  "active": false,
+  "created_at": "2026-10-08T20:12:30",
+  "updated_at": "2026-10-08T20:12:30",
+  "target": "补齐低频量感、收敛 6-7kHz 锐利、保持极致声场",
+  "metrics": "20-100Hz 低频平台 +4-5dB（THD 0.02% 余量内安全）；6-7kHz 峰值收敛 -2.5dB；整体频响偏差 ±2.5dB；THD <0.05% @1Vrms 维持",
+  "status": "56mm 开放式环形动圈；300Ω、110Hz 处 650Ω 阻抗谐振峰；灵敏度 102dB/Vrms；THD≤0.02%；<100Hz 低频滚降；6-7kHz 明显峰值（锐利感根源）",
+  "advice": "300Ω+110Hz 谐振峰：耳放输出阻抗 >10Ω 时低频会自然隆起，此时 110Hz 低架增益减半。",
+  "filters_rationale": [
+    {
+      "freq": 110,
+      "type": "LSC",
+      "gain": 4.0,
+      "q": 0.7,
+      "why": "开放式低频滚降平台补偿；转角避开 110Hz 阻抗谐振峰激发（置于峰上方起坡）",
+      "effect": "低频量感补齐，声场规模不受损"
+    },
+    {
+      "freq": 40,
+      "type": "PK",
+      "gain": 2.0,
+      "q": 1.2,
+      "why": "次低频下潜加强（0.02% THD 的巨大余量允许适度提升）",
+      "effect": "管风琴/电子乐低频氛围可闻"
+    },
+    {
+      "freq": 6500,
+      "type": "PK",
+      "gain": -2.5,
+      "q": 4.32,
+      "why": "6-7kHz 固有峰值窄带收敛（锐利/刺耳感根源），窄 Q 不伤 5-8k 空气感",
+      "effect": "高频锐利感消失、长时间聆听不疲劳"
+    },
+    {
+      "freq": 5000,
+      "type": "PK",
+      "gain": -1.0,
+      "q": 1.41,
+      "why": "峰值下肩部顺滑处理，与 6.5k 窄带形成连续过渡",
+      "effect": "中高频到高频过渡平顺"
+    },
+    {
+      "freq": 10000,
+      "type": "HSC",
+      "gain": 1.0,
+      "q": 0.7,
+      "why": "斜置障板强项区的空气感微抬，弥补收敛后的亮度感知",
+      "effect": "声场通透度保持"
+    }
+  ],
+  "preset": {
+    "name": "HD800耳机 v2 - 声学重设计",
+    "preamp": -6.4,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "frequency": 40,
+        "q": 1.2,
+        "gain": 2.0
+      },
+      {
+        "type": 0,
+        "frequency": 110,
+        "q": 0.7,
+        "gain": 4.0
+      },
+      {
+        "type": 3,
+        "frequency": 5000,
+        "q": 1.41,
+        "gain": -1.0
+      },
+      {
+        "type": 3,
+        "frequency": 6500,
+        "q": 4.32,
+        "gain": -2.5
+      },
+      {
+        "type": 1,
+        "frequency": 10000,
+        "q": 0.7,
+        "gain": 1.0
+      }
+    ],
+    "warnings": []
+  }
+}
