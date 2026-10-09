@@ -1,0 +1,49 @@
+{
+  "name": "三星HT-F5500W家庭影院",
+  "device_type": "bookshelf_speaker",
+  "brand": "Samsung",
+  "model": "HT-F5500W",
+  "preference": "balanced",
+  "intensity": 1.0,
+  "custom_bands": [
+    "PK 2800 2.0 1.2",
+    "HSC 9000 1.5 0.7"
+  ],
+  "genre": "",
+  "note": "家用5.1家庭影院（HTiB）；归类car_audio/speaker扬声器系，声学基准取bookshelf_speaker；核心痛点：对白被背景声淹没+无源6寸低音炮下潜浅",
+  "active": false,
+  "created_at": "2026-10-09T23:14:07",
+  "updated_at": "2026-10-09T23:14:07",
+  "preset": {
+    "name": "三星HT-F5500W家庭影院 - 书架/桌面音箱 - 均衡中性",
+    "preamp": -2.5,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 0,
+        "frequency": 90,
+        "q": 0.7,
+        "gain": 2.0
+      },
+      {
+        "type": 3,
+        "frequency": 220,
+        "q": 1.2,
+        "gain": -2.0
+      },
+      {
+        "type": 3,
+        "frequency": 2800,
+        "gain": 2.0,
+        "q": 1.2
+      },
+      {
+        "type": 1,
+        "frequency": 9000,
+        "gain": 1.5,
+        "q": 0.7
+      }
+    ],
+    "warnings": []
+  }
+}
