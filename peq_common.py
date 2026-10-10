@@ -17,7 +17,7 @@
 --------
 - 零行为变化：所有 v1-v5 脚本重构后输出必须 byte-identical
 - 渐进迁移：各脚本可独立切换 import，未切换的脚本继续工作
-- 单一来源：12 设备的元数据定义已抽到 devices.py（本模块 re-export 保持向后兼容）
+- 单一来源：13 设备的元数据定义已抽到 devices.py（本模块 re-export 保持向后兼容）
 - 扩展边界：版本业务字段（v1 r1/r2/r3、v2 filters、v3 pain/direction、v4 stream/unified、
   v5 新参数）仍保留在各版本脚本中（schema 差异过大，统一成本 > 收益）
 

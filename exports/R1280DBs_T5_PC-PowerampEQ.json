@@ -1,0 +1,73 @@
+[
+	{
+		"name": "R1280DBs_T5_PC - 监听音箱 - 均衡中性",
+		"preamp": -3.4,
+		"parametric": true,
+		"bands": [
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 58,
+				"q": 1.1,
+				"gain": 3.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 150,
+				"q": 1.2,
+				"gain": -3.5,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 220,
+				"q": 1.2,
+				"gain": -2.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 650,
+				"q": 1.0,
+				"gain": 2.0,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 2000,
+				"q": 1.4,
+				"gain": 2.5,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 3000,
+				"q": 1.4,
+				"gain": 0.5,
+				"color": 0
+			},
+			{
+				"type": 1,
+				"channels": 0,
+				"frequency": 9000,
+				"q": 0.7,
+				"gain": 1.5,
+				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 10000,
+				"q": 2.0,
+				"gain": -3.0,
+				"color": 0
+			}
+		]
+	}
+]

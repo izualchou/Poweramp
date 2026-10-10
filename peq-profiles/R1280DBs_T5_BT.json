@@ -1,0 +1,70 @@
+{
+  "name": "R1280DBs_T5_BT",
+  "device_type": "bookshelf_speaker",
+  "brand": "Edifier",
+  "model": "R1280DBs+T5(BT)",
+  "preference": "balanced",
+  "intensity": 1.0,
+  "custom_bands": [
+    "LSC 50 2.0 0.70",
+    "PK 150 -2.5 1.00",
+    "PK 2000 3.0 1.40",
+    "PK 10000 -2.0 2.00",
+    "HSC 12000 2.5 0.70"
+  ],
+  "genre": "",
+  "note": "",
+  "active": false,
+  "created_at": "2026-10-10T17:12:18",
+  "updated_at": "2026-10-10T17:12:18",
+  "preset": {
+    "name": "R1280DBs_T5_BT - 书架/桌面音箱 - 均衡中性",
+    "preamp": -4.4,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 0,
+        "frequency": 50,
+        "gain": 2.0,
+        "q": 0.7
+      },
+      {
+        "type": 0,
+        "frequency": 90,
+        "q": 0.7,
+        "gain": 2.0
+      },
+      {
+        "type": 3,
+        "frequency": 150,
+        "gain": -2.5,
+        "q": 1.0
+      },
+      {
+        "type": 3,
+        "frequency": 220,
+        "q": 1.2,
+        "gain": -2.0
+      },
+      {
+        "type": 3,
+        "frequency": 2000,
+        "gain": 3.0,
+        "q": 1.4
+      },
+      {
+        "type": 3,
+        "frequency": 10000,
+        "gain": -2.0,
+        "q": 2.0
+      },
+      {
+        "type": 1,
+        "frequency": 12000,
+        "gain": 2.5,
+        "q": 0.7
+      }
+    ],
+    "warnings": []
+  }
+}

@@ -41,8 +41,8 @@
   "locked": true,
   "note": "v2 声学方案细化为 31 段频点",
   "active": false,
-  "created_at": "2026-10-08T20:12:30",
-  "updated_at": "2026-10-08T20:12:30",
+  "created_at": "2026-10-09T23:55:24",
+  "updated_at": "2026-10-09T23:55:24",
   "pain_points": [
     "Helmholtz 共振腔调校不足 → 100Hz 附近低频轰头、掩蔽中频",
     "6kHz 陷波处理不当 → 中高频衔接断点、泛音不连贯",

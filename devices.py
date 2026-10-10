@@ -3,7 +3,7 @@
 
 目的
 ----
-将 12 设备 6 品类 6 字段（name / device_type / category / brand / model / hi_res_capable）
+将 13 设备 7 品类 6 字段（name / device_type / category / brand / model / hi_res_capable）
 集中到独立模块，与 peq_common 的"通用工具"职责分离：
 
   devices.py     →  设备元数据 + 查询函数（THIS）
@@ -11,7 +11,7 @@
 
 设计原则
 --------
-- **单一来源**：12 设备的 6 字段只在此处定义一次；5 脚本通过 re-export 间接访问
+- **单一来源**：13 设备的 6 字段只在此处定义一次；5 脚本通过 re-export 间接访问
 - **向后兼容**：通过 peq_common.py 的 re-export，5 脚本保持 `from peq_common import DEVICE_REGISTRY`
   原写法不变，避免破坏性变更
 - **最小迁移**：本模块只承担 6 字段 + 查询函数；版本业务字段（v1 r1/r2/r3、v2 filters、
@@ -41,7 +41,7 @@ from typing import Tuple
 
 
 # ============================================================================
-# 设备元数据（12 设备 × 6 字段）
+# 设备元数据（13 设备 × 6 字段）
 # ============================================================================
 
 DEVICE_REGISTRY: dict = {
@@ -135,16 +135,26 @@ DEVICE_REGISTRY: dict = {
         "model": "X-Trail 原厂 6 扬声器（被动 2 分频 / 20W 额定）",
         "hi_res_capable": False,
     },
+    # ==================== 家用家庭影院（car_audio/speaker 类） ====================
+    # 引擎无 home_theater 规则类型；声学基准取 bookshelf_speaker（见 声学特点.txt 6.1 维度 8）
+    "三星HT-F5500W家庭影院": {
+        "device_type": "home_theater",
+        "category": "HomeTheater",
+        "brand": "Samsung",
+        "model": "HT-F5500W（5.1 HTiB / 1000W PMPO / 165W×4+170W×2 / 无源6寸炮 / SWA-6000无线环绕）",
+        "hi_res_capable": False,  # Dolby Digital/DTS 5.1 有损解码；无 TrueHD/DTS-HD
+    },
 }
 
 
-# 品类排序（IEM → Headphone → ANC → Portable → Phone → Car）
+# 品类排序（IEM → Headphone → ANC → Portable → Phone → Car → HomeTheater）
 CATEGORY_ORDER: dict = {
     "IEM": 0, "Headphone": 1, "ANC": 2, "Portable": 3, "Phone": 4, "Car": 5,
+    "HomeTheater": 6,
 }
 
 
-# 设备类型 → 品类反查（来自 skill references/device-profiles.md）
+# 设备类型 → 品类反查（来自 skill references/device-profiles.md + 项目扩展 home_theater）
 DEVICE_TYPE_TO_CATEGORY: dict = {
     "iem_dynamic": "IEM",
     "iem_hybrid": "IEM",
@@ -154,11 +164,12 @@ DEVICE_TYPE_TO_CATEGORY: dict = {
     "portable_speaker": "Portable",
     "phone_speaker": "Phone",
     "car_audio": "Car",
+    "home_theater": "HomeTheater",  # 项目扩展：家用家庭影院（car_audio/speaker 扬声器系）
 }
 
 
 # 设备总数（用于交叉验证 v1-v5 脚本）
-EXPECTED_DEVICE_COUNT: int = 12
+EXPECTED_DEVICE_COUNT: int = 13
 
 
 # ============================================================================
@@ -166,7 +177,7 @@ EXPECTED_DEVICE_COUNT: int = 12
 # ============================================================================
 
 def device_names(sort_by_category: bool = True) -> list:
-    """返回 12 设备名列表。
+    """返回 13 设备名列表。
 
     Args:
         sort_by_category: True 按品类排序（IEM→Headphone→ANC→Portable→Phone→Car），
@@ -201,7 +212,7 @@ def hi_res_capable_of(name: str) -> bool:
 
 
 def validate_device_coverage(claimed_names: list) -> Tuple[list, list]:
-    """验证 claimed_names 是否覆盖全部 12 设备。
+    """验证 claimed_names 是否覆盖全部 13 设备。
 
     Args:
         claimed_names: 5 脚本中声明的设备名清单

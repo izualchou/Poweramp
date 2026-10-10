@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""v5：12 设备综合调优（PEQ + 分频 + 增益 + 延迟 + 动态处理）。
+"""v5：13 设备综合调优（PEQ + 分频 + 增益 + 延迟 + 动态处理）。
 
 以 v4统一无损 31 段 PEQ 为基础（继承），新增 4 维度：
 
@@ -15,8 +15,8 @@
   - 手机扬声器：硬件边界决定，EQ 不可修
 
 输出：
-  peq-profiles/<设备名>v5.json  （12 个，comprehensive tuning config）
-  exports/v5/<设备名>v5-Poweramp.txt / .json  （12 组，Poweramp 导入用）
+  peq-profiles/<设备名>v5.json  （13 个，comprehensive tuning config）
+  exports/v5/<设备名>v5-Poweramp.txt / .json  （13 组，Poweramp 导入用）
   PEQ优化方案v5-综合调优.md  （v3→v5 升级总览 + 逐项变更与声学依据）
 
 依赖：peq_common（共享常量/路径/IO）+ peq_engine（确定性计算/校验/渲染）。
@@ -30,7 +30,7 @@ from pathlib import Path
 sys.path.insert(0, r"C:\Users\izual\.codebuddy\skills\poweramp-peq-tuner\scripts")
 from peq_common import (  # noqa: E402
     PROFILE_DIR, now_iso, ensure_dir, write_json, write_text, export_dir_for,
-    DEVICE_REGISTRY, device_names,
+    DEVICE_REGISTRY, device_names, EXPECTED_DEVICE_COUNT,
 )
 from peq_engine import (  # noqa: E402
     compute_preamp,
@@ -167,6 +167,39 @@ V5_NEW_PARAMS = {
         },
         "dsp_note": "无外置 DSP 功放不可实现本配置；外置 DSP（如 Helix DSP Mini）参考方案",
     },
+    # ==================== 家用家庭影院（car_audio/speaker 类） ====================
+    "三星HT-F5500W家庭影院": {
+        "crossover_note": {
+            "type": "satellite_sub_passive",
+            "frequencies_hz": {"sat_internal": None, "sub_crossover": 200},
+            "slopes_db_oct": [6, 6],
+            "physical_location": {
+                "front_l_r": "电视两侧落地", "center": "电视下方横置",
+                "surround": "沙发后方（SWA-6000 无线接收盒供电）",
+                "subwoofer": "地面独立摆位",
+            },
+            "path_difference_m": "环绕箱距听音位约比前置远 0.3-0.5m（随房间）",
+            "compensation_eq": "220Hz 收敛清卫星箱/边界染声；2.8kHz 对白补偿（v3 PEQ 已含）；"
+                                "无源炮交越区约 100-200Hz，v3 已在 90Hz 低架温和补量",
+        },
+        "delay": {
+            "per_driver_ms": {"surround_left": 1.0, "surround_right": 1.0},
+            "why": "环绕箱位于听音位侧后方约 0.3m（343m/s ≈ 1.0ms）；"
+                   "本机蓝光主机无延迟调节功能，需外置处理器（HDMI 环出）实现"
+        },
+        "compressor": {
+            "threshold_db": -6.0, "ratio": 3.0, "attack_ms": 30, "release_ms": 250,
+            "why": "无源 6\" 炮 + 塑料卫星箱动态余量小（1000W 为 PMPO 营销口径）；"
+                   "压缩保护防大动态场景（爆炸/齐奏）打底"
+        },
+        "limiter": {
+            "ceiling_db": -0.5, "release_ms": 80,
+            "why": "165W×4+170W×2 标称功放封顶；limiter 防无源炮过冲失真"
+        },
+        "dsp_note": "本机为封闭 HTiB（专有音箱接口 + 无 HDMI ARC），无法外接 DSP；"
+                    "crossover/delay/dynamics 记录为参考规格——升级路径为更换分体式功放+音箱，"
+                    "或经 HDMI 光纤输入前串外置处理器",
+    },
 }
 
 
@@ -284,7 +317,9 @@ def main() -> int:
     ensure_dir(EXPORT_V5)
 
     v4_files = sorted(PROFILE_DIR.glob("*v4统一无损.json"))
-    assert len(v4_files) == 12, f"应找到 12 个 v4统一无损 档案，实际 {len(v4_files)}"
+    assert len(v4_files) == EXPECTED_DEVICE_COUNT, (
+        f"应找到 {EXPECTED_DEVICE_COUNT} 个 v4统一无损 档案，实际 {len(v4_files)}"
+    )
 
     # 报告初始化
     report = [
@@ -299,13 +334,13 @@ def main() -> int:
         "",
         "| 维度 | 新增内容 | 主要适用设备 | Poweramp 是否直接支持 |",
         "|---|---|---|---|",
-        "| **均衡 (equalizer)** | 继承 v4统一无损 PEQ（无改动）| 12 设备 | ✓ 直接导入 |",
-        "| **分频 (crossover)** | 物理分频点 / 斜率 / 位置 / EQ 补偿 | X-Trail（K13 是 full-range）| ✗ 需外置 DSP |",
-        "| **增益 (gain)** | 通道平衡 + 前端输出阻抗建议 + 单元电平匹配 | 12 设备差异化 | △ 部分（前端阻抗为建议）|",
-        "| **延迟 (delay)** | 多驱动单元时间对齐 | K13 / X-Trail | ✗ 需外置 DSP |",
-        "| **动态 (dynamics)** | 压缩器 (compressor) + 限幅器 (limiter) | IE900 复刻 / XB12 / 车载 | ✗ 需外置 DSP（Poweramp 无动态）|",
+        "| **均衡 (equalizer)** | 继承 v4统一无损 PEQ（无改动）| 13 设备 | ✓ 直接导入 |",
+        "| **分频 (crossover)** | 物理分频点 / 斜率 / 位置 / EQ 补偿 | X-Trail / HT-F5500W（K13 是 full-range）| ✗ 需外置 DSP |",
+        "| **增益 (gain)** | 通道平衡 + 前端输出阻抗建议 + 单元电平匹配 | 13 设备差异化 | △ 部分（前端阻抗为建议）|",
+        "| **延迟 (delay)** | 多驱动单元时间对齐 | K13 / X-Trail / HT-F5500W | ✗ 需外置 DSP |",
+        "| **动态 (dynamics)** | 压缩器 (compressor) + 限幅器 (limiter) | IE900 复刻 / XB12 / 车载 / HT-F5500W | ✗ 需外置 DSP（Poweramp 无动态）|",
         "",
-        "## v3 → v5 升级总览（12 设备）",
+        "## v3 → v5 升级总览（13 设备）",
         "",
         "| 设备 | EQ | 分频 | 增益新增 | 延迟 | 动态 | 主要升级点 |",
         "|---|---|---|---|---|---|---|",
@@ -324,6 +359,7 @@ def main() -> int:
         "OPPO A5 4G手机扬声器": ("继承 v4统一无损", "none", "系统声道平衡", "none", "手机 DSP", "硬件不可修项记录"),
         "Micra K13车载音响": ("继承 v4统一无损", "full_range", "原厂无电平匹配", "后门 +0.5ms", "+compressor +limiter", "车载综合升级"),
         "Nissan X-Trail车载音响": ("继承 v4统一无损", "passive_2way", "原厂分频器已匹配", "中低音 +1.5ms / 后门 +0.5ms", "+compressor +limiter", "2 路被动分频 + 时间对齐"),
+        "三星HT-F5500W家庭影院": ("继承 v4统一无损", "satellite_sub", "主机内置功放已匹配", "环绕 +1.0ms", "+compressor +limiter", "5.1 布局时间对齐 + 无源炮动态保护"),
     }
     for dev, summary in upgrade_summary.items():
         report.append(f"| {dev} | {' | '.join(summary)} |")
@@ -555,7 +591,7 @@ def main() -> int:
     ]
 
     REPORT.write_text("\n".join(report), encoding="utf-8", newline="\n")
-    print(f"完成：{total} 个 v5 综合配置（12 设备）")
+    print(f"完成：{total} 个 v5 综合配置（13 设备）")
     print(f"档案 -> {PROFILE_DIR}；预设 -> {EXPORT_V5}；报告 -> {REPORT}")
     return 0
 

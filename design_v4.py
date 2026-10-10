@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""v4：12 设备 31 段 PEQ 的音源适配版（流媒体有损 / 统一无损）。
+"""v4：13 设备 31 段 PEQ 的音源适配版（流媒体有损 / 统一无损）。
 
 以 v3 31 段配置为基准派生双变体（确定性规则变换，Q=4.32 网格不变，仅调增益）：
 
@@ -14,8 +14,8 @@
   - 其他频段维持 v3
 
 输出：
-  peq-profiles/<设备名>v4流媒体.json / <设备名>v4统一无损.json  （24 个 locked 档案）
-  exports/v4/流媒体/ 与 exports/v4/统一无损/  （各 12 组 .txt + .json）
+  peq-profiles/<设备名>v4流媒体.json / <设备名>v4统一无损.json  （26 个 locked 档案）
+  exports/v4/流媒体/ 与 exports/v4/统一无损/  （各 13 组 .txt + .json）
   PEQ优化方案v4-音源适配.md  （决策树/服务偏移表/调整目标/逐频段/听感差异）
 
 依赖：peq_common（共享常量/路径/IO）+ peq_engine（确定性计算/校验/渲染）。
@@ -29,7 +29,7 @@ from pathlib import Path
 sys.path.insert(0, r"C:\Users\izual\.codebuddy\skills\poweramp-peq-tuner\scripts")
 from peq_common import (  # noqa: E402
     GRID_Q, PROFILE_DIR, now_iso, ensure_dir, write_json, write_text,
-    export_dir_for, DEVICE_REGISTRY, hi_res_capable_of,
+    export_dir_for, DEVICE_REGISTRY, hi_res_capable_of, EXPECTED_DEVICE_COUNT,
 )
 from peq_engine import (  # noqa: E402
     compute_preamp,
@@ -247,6 +247,24 @@ META = {
             "ANC ON/OFF 需分别校准（ANC 改变低频感知）",
         ],
     },
+    "三星HT-F5500W家庭影院": {
+        "target_stream": "5.1 HTiB 音源多为流媒体有损（Netflix/YouTube DD+ 5.1）："
+                         "12500Hz 空气感补偿段收敛防编码伪影放大，"
+                         "对白 2.5-3.15kHz 与中低频收敛段不动（对白优先级最高）。",
+        "diff_stream": "优化前：流媒体片源下 12.5kHz 段偶有数字'沙沙'感叠加环绕后场暗区；"
+                       "优化后：高频干净，对白可懂度补偿与低频量感完全保持。",
+        "target_unified": "物理受限设备：Dolby Digital/DTS 本身即有损 5.1 编码（无 TrueHD/DTS-HD），"
+                          "蓝光本地音轨与流媒体同为有损底——维持 v3 不变，"
+                          "不启用 Hi-Res boost（hi_res_capable=False）。",
+        "diff_unified": "优化前/后无差异：本机解码上限为 DD/DTS 有损 5.1，"
+                        "上游无损源经本机解码后无可闻延伸；保留 v3 配置即可。",
+        "conditions": [
+            "任一音源——本机解码上限为 Dolby Digital/DTS 有损 5.1",
+            "音源设备（电视盒/游戏机）须开 Dolby Digital 位流输出（否则中置偏弱）",
+            "蓝牙播放后置无声时按遥控器 3D Sound 键",
+            "避免与机内 DSP（3D Sound/夜间模式）叠加造成双 EQ 失真",
+        ],
+    },
 }
 
 
@@ -299,7 +317,9 @@ def main() -> int:
     ensure_dir(EXPORT_UNIFIED)
 
     v3_files = sorted(PROFILE_DIR.glob("*v3.json"))
-    assert len(v3_files) == 12, f"应找到 12 个 v3 档案，实际 {len(v3_files)}"
+    assert len(v3_files) == EXPECTED_DEVICE_COUNT, (
+        f"应找到 {EXPECTED_DEVICE_COUNT} 个 v3 档案，实际 {len(v3_files)}"
+    )
 
     # 全局服务特定 preamp 偏移（用于档案 JSON 与报告"服务偏移表"）
     services_offset_lines = [
@@ -496,7 +516,7 @@ def main() -> int:
         report += ["---", ""]
 
     REPORT.write_text("\n".join(report), encoding="utf-8", newline="\n")
-    print(f"完成：{total} 个 v4 变体（12 设备 x {len(variants)} 音源）")
+    print(f"完成：{total} 个 v4 变体（13 设备 x {len(variants)} 音源）")
     print(f"档案 -> {PROFILE_DIR}；预设 -> {EXPORT_STREAM} 与 {EXPORT_UNIFIED}；报告 -> {REPORT}")
     return 0
 

@@ -1,6 +1,6 @@
 # PEQ 优化方案 v5 —— 综合调优（PEQ + 分频 + 增益 + 延迟 + 动态处理）
 
-生成时间：2026-10-08T20:12:31　|　基准：v4统一无损 31 段 PEQ　|　声学参考：声学特点.txt　|　计算引擎：poweramp-peq-tuner
+生成时间：2026-10-09T23:55:29　|　基准：v4统一无损 31 段 PEQ　|　声学参考：声学特点.txt　|　计算引擎：poweramp-peq-tuner
 
 ## 升级定位
 
@@ -8,13 +8,13 @@ v5 在 v4统一无损 31 段 PEQ 基础上，**新增 4 类综合调优参数**�
 
 | 维度 | 新增内容 | 主要适用设备 | Poweramp 是否直接支持 |
 |---|---|---|---|
-| **均衡 (equalizer)** | 继承 v4统一无损 PEQ（无改动）| 12 设备 | ✓ 直接导入 |
-| **分频 (crossover)** | 物理分频点 / 斜率 / 位置 / EQ 补偿 | X-Trail（K13 是 full-range）| ✗ 需外置 DSP |
-| **增益 (gain)** | 通道平衡 + 前端输出阻抗建议 + 单元电平匹配 | 12 设备差异化 | △ 部分（前端阻抗为建议）|
-| **延迟 (delay)** | 多驱动单元时间对齐 | K13 / X-Trail | ✗ 需外置 DSP |
-| **动态 (dynamics)** | 压缩器 (compressor) + 限幅器 (limiter) | IE900 复刻 / XB12 / 车载 | ✗ 需外置 DSP（Poweramp 无动态）|
+| **均衡 (equalizer)** | 继承 v4统一无损 PEQ（无改动）| 13 设备 | ✓ 直接导入 |
+| **分频 (crossover)** | 物理分频点 / 斜率 / 位置 / EQ 补偿 | X-Trail / HT-F5500W（K13 是 full-range）| ✗ 需外置 DSP |
+| **增益 (gain)** | 通道平衡 + 前端输出阻抗建议 + 单元电平匹配 | 13 设备差异化 | △ 部分（前端阻抗为建议）|
+| **延迟 (delay)** | 多驱动单元时间对齐 | K13 / X-Trail / HT-F5500W | ✗ 需外置 DSP |
+| **动态 (dynamics)** | 压缩器 (compressor) + 限幅器 (limiter) | IE900 复刻 / XB12 / 车载 / HT-F5500W | ✗ 需外置 DSP（Poweramp 无动态）|
 
-## v3 → v5 升级总览（12 设备）
+## v3 → v5 升级总览（13 设备）
 
 | 设备 | EQ | 分频 | 增益新增 | 延迟 | 动态 | 主要升级点 |
 |---|---|---|---|---|---|---|
@@ -30,6 +30,7 @@ v5 在 v4统一无损 31 段 PEQ 基础上，**新增 4 类综合调优参数**�
 | OPPO A5 4G手机扬声器 | 继承 v4统一无损 | none | 系统声道平衡 | none | 手机 DSP | 硬件不可修项记录 |
 | Micra K13车载音响 | 继承 v4统一无损 | full_range | 原厂无电平匹配 | 后门 +0.5ms | +compressor +limiter | 车载综合升级 |
 | Nissan X-Trail车载音响 | 继承 v4统一无损 | passive_2way | 原厂分频器已匹配 | 中低音 +1.5ms / 后门 +0.5ms | +compressor +limiter | 2 路被动分频 + 时间对齐 |
+| 三星HT-F5500W家庭影院 | 继承 v4统一无损 | satellite_sub | 主机内置功放已匹配 | 环绕 +1.0ms | +compressor +limiter | 5.1 布局时间对齐 + 无源炮动态保护 |
 
 ## 通用调优原则
 
@@ -523,6 +524,53 @@ v5 在 v4统一无损 31 段 PEQ 基础上，**新增 4 类综合调优参数**�
 
 ---
 
+### 三星HT-F5500W家庭影院（home_theater）
+
+**基准档案**：`三星HT-F5500W家庭影院v4统一无损`（31 段 PEQ + Hi-Res boost 视设备）
+
+#### 1. 均衡（继承 v4统一无损）
+
+- preamp: **-3.5 dB**
+- 31 段 parametric bands（Q=4.32，1/3 倍频程 ISO 频栅）
+- 详见 base 档案：`peq-profiles/三星HT-F5500W家庭影院v4统一无损.json`
+
+#### 2. 分频
+
+- 类型：**satellite_sub_passive**
+- 分频点：{'sat_internal': None, 'sub_crossover': 200}
+- 斜率：[6, 6] dB/oct
+- 物理位置：{'front_l_r': '电视两侧落地', 'center': '电视下方横置', 'surround': '沙发后方（SWA-6000 无线接收盒供电）', 'subwoofer': '地面独立摆位'}
+- 路径差：环绕箱距听音位约比前置远 0.3-0.5m（随房间） m（高音 vs 中低音）
+- EQ 补偿：220Hz 收敛清卫星箱/边界染声；2.8kHz 对白补偿（v3 PEQ 已含）；无源炮交越区约 100-200Hz，v3 已在 90Hz 低架温和补量
+- 声学依据：
+
+#### 3. 增益
+
+- preamp：-3.5 dB（与均衡共享）
+- 通道平衡：左 +0.0 dB / 右 +0.0 dB
+
+#### 4. 延迟
+
+- 左/右：0 ms / 0 ms
+- 按驱动单元：{'surround_left': 1.0, 'surround_right': 1.0}
+- 声学依据：环绕箱位于听音位侧后方约 0.3m（343m/s ≈ 1.0ms）；本机蓝光主机无延迟调节功能，需外置处理器（HDMI 环出）实现
+- 备注：无
+
+#### 5. 动态
+
+- 压缩器：启用
+  - threshold: -6.0 dB / ratio: 3.0 / attack: 30 ms / release: 250 ms
+  - 声学依据：无源 6" 炮 + 塑料卫星箱动态余量小（1000W 为 PMPO 营销口径）；压缩保护防大动态场景（爆炸/齐奏）打底
+- 限幅器：启用
+  - ceiling: -0.5 dB / release: 80 ms
+  - 声学依据：165W×4+170W×2 标称功放封顶；limiter 防无源炮过冲失真
+- **DSP 备注**：本机为封闭 HTiB（专有音箱接口 + 无 HDMI ARC），无法外接 DSP；crossover/delay/dynamics 记录为参考规格——升级路径为更换分体式功放+音箱，或经 HDMI 光纤输入前串外置处理器
+
+**导出**：`exports/v5/三星HT-F5500W家庭影院v5-Poweramp.txt` / `-PowerampEQ.json`（仅均衡部分）
+**完整配置**：`peq-profiles/三星HT-F5500W家庭影院v5.json`（含分频/增益/延迟/动态）
+
+---
+
 ## 跨设备新参数启用统计
 
 | 设备 | 均衡 | 分频 | 增益新增 | 延迟 | 动态 |
@@ -539,6 +587,7 @@ v5 在 v4统一无损 31 段 PEQ 基础上，**新增 4 类综合调优参数**�
 | OPPO A5 4G手机扬声器 | 继承 v4统一无损 | — | 系统声道平衡 / 硬件不可修项 | — | — |
 | Micra K13车载音响 | 继承 v4统一无损 | non-trivial | — | ✓ | — |
 | Nissan X-Trail车载音响 | 继承 v4统一无损 | non-trivial | — | ✓ | — |
+| 三星HT-F5500W家庭影院 | 继承 v4统一无损 | non-trivial | — | ✓ | — |
 
 ## 实施步骤
 
