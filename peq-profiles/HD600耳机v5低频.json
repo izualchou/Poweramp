@@ -1,0 +1,565 @@
+{
+  "name": "HD600耳机v5低频",
+  "device_type": "open_headphone",
+  "version": "5.0",
+  "created_at": "2026-10-11T23:02:12",
+  "updated_at": "2026-10-11T23:02:12",
+  "locked": true,
+  "active": false,
+  "variant": "bass",
+  "variant_label": "补低频（流行/电子向）",
+  "brand": "Sennheiser",
+  "model": "HD 600",
+  "preference": "custom_v5",
+  "intensity": 1.0,
+  "base": "HD600耳机v4统一无损低频",
+  "acoustic_reference": "官方规格 + 用户共识",
+  "status": "HD600：42mm 开放式动圈；300Ω；97dB(1V)（≈92dB/mW）；12Hz–40.5kHz；THD<0.1%(1kHz,1V)；260g。低频自然滚降（<100Hz 量感与下潜不足）；中频密度高（优势，需保留）；高频顺滑不刺、无 6-7kHz 锐利峰",
+  "equalizer": {
+    "preamp_db": -6.8,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 20,
+        "q": 4.32,
+        "gain": 3.6,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 25,
+        "q": 4.32,
+        "gain": 3.1,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 31,
+        "q": 4.32,
+        "gain": 3.7,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 40,
+        "q": 4.32,
+        "gain": 4.3,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 50,
+        "q": 4.32,
+        "gain": 4.1,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 63,
+        "q": 4.32,
+        "gain": 3.5,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 80,
+        "q": 4.32,
+        "gain": 2.6,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 100,
+        "q": 4.32,
+        "gain": 1.7,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 125,
+        "q": 4.32,
+        "gain": 0.9,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 160,
+        "q": 4.32,
+        "gain": 0.2,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 200,
+        "q": 4.32,
+        "gain": -0.2,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 250,
+        "q": 4.32,
+        "gain": -0.5,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 315,
+        "q": 4.32,
+        "gain": -0.7,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 400,
+        "q": 4.32,
+        "gain": -0.5,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 500,
+        "q": 4.32,
+        "gain": -0.3,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 630,
+        "q": 4.32,
+        "gain": -0.1,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 800,
+        "q": 4.32,
+        "gain": -0.1,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 1000,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 1250,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 1600,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 2000,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 2500,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 3150,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 4000,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 5000,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 6300,
+        "q": 4.32,
+        "gain": 0.1,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 8000,
+        "q": 4.32,
+        "gain": 0.2,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 10000,
+        "q": 4.32,
+        "gain": 0.4,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 12500,
+        "q": 4.32,
+        "gain": 0.8,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 16000,
+        "q": 4.32,
+        "gain": 0.9,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 20000,
+        "q": 4.32,
+        "gain": 1.1,
+        "color": 0
+      }
+    ],
+    "warnings": [
+      "警告: 频段数 31 超过建议上限 16（主应用最多 128 段）"
+    ],
+    "note": "继承 v4统一无损 31 段 PEQ；v5 升级不修改 EQ 本身"
+  },
+  "crossover": {
+    "type": "none",
+    "note": "单驱动单元，无外部分频"
+  },
+  "gain": {
+    "preamp_db": -6.8,
+    "per_channel_db": {
+      "left": 0.0,
+      "right": 0.0
+    },
+    "rationale": "PEQ 基准 preamp；通道平衡默认 0dB",
+    "frontend_output_z_max_ohm": 37,
+    "frontend_output_z_basis": "300Ω 标称 ÷ 8（1/8 法则）≈ 37Ω；AE-7 实测 1Ω 完全满足"
+  },
+  "delay": {
+    "per_driver_ms": {},
+    "left_ms": 0,
+    "right_ms": 0,
+    "note": "单驱动，无需时间对齐"
+  },
+  "dynamics": {
+    "compressor": {
+      "enabled": false,
+      "rationale": "HD600 THD 余量 <0.1%，不做压缩"
+    },
+    "limiter": {
+      "enabled": false,
+      "rationale": "preamp 已负向补偿防削波"
+    }
+  },
+  "extras": {},
+  "preset": {
+    "name": "HD600耳机v5低频 v5",
+    "preamp": -6.8,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 20,
+        "q": 4.32,
+        "gain": 3.6,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 25,
+        "q": 4.32,
+        "gain": 3.1,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 31,
+        "q": 4.32,
+        "gain": 3.7,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 40,
+        "q": 4.32,
+        "gain": 4.3,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 50,
+        "q": 4.32,
+        "gain": 4.1,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 63,
+        "q": 4.32,
+        "gain": 3.5,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 80,
+        "q": 4.32,
+        "gain": 2.6,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 100,
+        "q": 4.32,
+        "gain": 1.7,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 125,
+        "q": 4.32,
+        "gain": 0.9,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 160,
+        "q": 4.32,
+        "gain": 0.2,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 200,
+        "q": 4.32,
+        "gain": -0.2,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 250,
+        "q": 4.32,
+        "gain": -0.5,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 315,
+        "q": 4.32,
+        "gain": -0.7,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 400,
+        "q": 4.32,
+        "gain": -0.5,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 500,
+        "q": 4.32,
+        "gain": -0.3,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 630,
+        "q": 4.32,
+        "gain": -0.1,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 800,
+        "q": 4.32,
+        "gain": -0.1,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 1000,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 1250,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 1600,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 2000,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 2500,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 3150,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 4000,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 5000,
+        "q": 4.32,
+        "gain": 0.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 6300,
+        "q": 4.32,
+        "gain": 0.1,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 8000,
+        "q": 4.32,
+        "gain": 0.2,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 10000,
+        "q": 4.32,
+        "gain": 0.4,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 12500,
+        "q": 4.32,
+        "gain": 0.8,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 16000,
+        "q": 4.32,
+        "gain": 0.9,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 20000,
+        "q": 4.32,
+        "gain": 1.1,
+        "color": 0
+      }
+    ],
+    "warnings": [
+      "警告: 频段数 31 超过建议上限 16（主应用最多 128 段）"
+    ]
+  }
+}

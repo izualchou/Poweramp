@@ -1,0 +1,63 @@
+{
+  "name": "HD600耳机v2",
+  "device_type": "open_headphone",
+  "brand": "Sennheiser",
+  "model": "HD 600",
+  "variant": "neutral",
+  "variant_label": "通用中性",
+  "preference": "custom_v2",
+  "intensity": 1.0,
+  "locked": true,
+  "active": false,
+  "created_at": "2026-10-11T23:02:12",
+  "updated_at": "2026-10-11T23:02:12",
+  "status": "HD600：42mm 开放式动圈；300Ω；97dB(1V)（≈92dB/mW）；12Hz–40.5kHz；THD<0.1%(1kHz,1V)；260g。低频自然滚降（<100Hz 量感与下潜不足）；中频密度高（优势，需保留）；高频顺滑不刺、无 6-7kHz 锐利峰",
+  "custom_bands": [
+    "LSC 105 2.5 0.70",
+    "HSC 9000 0.5 0.70"
+  ],
+  "note": "v2 基于 HD600 声学数据的参数化重设计",
+  "target": "忠实还原 HD600 参考频响",
+  "filters_rationale": [
+    {
+      "freq": 105,
+      "type": "LSC",
+      "gain": 2.5,
+      "q": 0.7,
+      "why": "温和补偿开放式低频自然滚降，维持参考中性",
+      "effect": "低频不再明显偏薄，中频不受影响"
+    },
+    {
+      "freq": 9000,
+      "type": "HSC",
+      "gain": 0.5,
+      "q": 0.7,
+      "why": "极轻微空气感，HD600 高频本身顺滑无需削减",
+      "effect": "通透度保持"
+    }
+  ],
+  "preset": {
+    "name": "HD600耳机v2 v2 - 声学重设计",
+    "preamp": -3.0,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 0,
+        "channels": 0,
+        "frequency": 105,
+        "q": 0.7,
+        "gain": 2.5,
+        "color": 0
+      },
+      {
+        "type": 1,
+        "channels": 0,
+        "frequency": 9000,
+        "q": 0.7,
+        "gain": 0.5,
+        "color": 0
+      }
+    ],
+    "warnings": []
+  }
+}

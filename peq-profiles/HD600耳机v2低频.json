@@ -1,0 +1,81 @@
+{
+  "name": "HD600耳机v2低频",
+  "device_type": "open_headphone",
+  "brand": "Sennheiser",
+  "model": "HD 600",
+  "variant": "bass",
+  "variant_label": "补低频（流行/电子向）",
+  "preference": "custom_v2",
+  "intensity": 1.0,
+  "locked": true,
+  "active": false,
+  "created_at": "2026-10-11T23:02:12",
+  "updated_at": "2026-10-11T23:02:12",
+  "status": "HD600：42mm 开放式动圈；300Ω；97dB(1V)（≈92dB/mW）；12Hz–40.5kHz；THD<0.1%(1kHz,1V)；260g。低频自然滚降（<100Hz 量感与下潜不足）；中频密度高（优势，需保留）；高频顺滑不刺、无 6-7kHz 锐利峰",
+  "custom_bands": [
+    "PK 45 2.5 0.90",
+    "LSC 105 4.0 0.70",
+    "PK 300 -1.0 1.00",
+    "HSC 9000 1.0 0.70"
+  ],
+  "note": "v2 基于 HD600 声学数据的参数化重设计",
+  "target": "保留中频密度、适度抬升低频量感与下潜",
+  "filters_rationale": [
+    {
+      "freq": 105,
+      "type": "LSC",
+      "gain": 4.0,
+      "q": 0.7,
+      "why": "补偿开放式低频自然滚降；中性变体仅 +2.5dB 保持参考性，低频变体 +4.0dB 补量感",
+      "effect": "低频量感补齐，不动中频"
+    },
+    {
+      "freq": 45,
+      "type": "PK",
+      "gain": 2.5,
+      "q": 0.9,
+      "why": "次低频下潜加强（仅低频变体）",
+      "effect": "电子/流行低频氛围可闻"
+    }
+  ],
+  "preset": {
+    "name": "HD600耳机v2低频 v2 - 声学重设计",
+    "preamp": -6.8,
+    "parametric": true,
+    "bands": [
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 45,
+        "q": 0.9,
+        "gain": 2.5,
+        "color": 0
+      },
+      {
+        "type": 0,
+        "channels": 0,
+        "frequency": 105,
+        "q": 0.7,
+        "gain": 4.0,
+        "color": 0
+      },
+      {
+        "type": 3,
+        "channels": 0,
+        "frequency": 300,
+        "q": 1.0,
+        "gain": -1.0,
+        "color": 0
+      },
+      {
+        "type": 1,
+        "channels": 0,
+        "frequency": 9000,
+        "q": 0.7,
+        "gain": 1.0,
+        "color": 0
+      }
+    ],
+    "warnings": []
+  }
+}
