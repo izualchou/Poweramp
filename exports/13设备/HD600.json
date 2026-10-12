@@ -1,7 +1,7 @@
 [
 	{
 		"name": "HD600",
-		"preamp": -3.0,
+		"preamp": -6.3,
 		"parametric": true,
 		"bands": [
 			{
@@ -9,7 +9,7 @@
 				"channels": 0,
 				"frequency": 20,
 				"q": 4.32,
-				"gain": 2.0,
+				"gain": 4.5,
 				"color": 0
 			},
 			{
@@ -17,7 +17,7 @@
 				"channels": 0,
 				"frequency": 25,
 				"q": 4.32,
-				"gain": 1.6,
+				"gain": 4.0,
 				"color": 0
 			},
 			{
@@ -25,7 +25,7 @@
 				"channels": 0,
 				"frequency": 32,
 				"q": 4.32,
-				"gain": 1.6,
+				"gain": 3.5,
 				"color": 0
 			},
 			{
@@ -33,7 +33,7 @@
 				"channels": 0,
 				"frequency": 40,
 				"q": 4.32,
-				"gain": 1.6,
+				"gain": 3.0,
 				"color": 0
 			},
 			{
@@ -41,7 +41,7 @@
 				"channels": 0,
 				"frequency": 50,
 				"q": 4.32,
-				"gain": 1.5,
+				"gain": 2.5,
 				"color": 0
 			},
 			{
@@ -49,7 +49,7 @@
 				"channels": 0,
 				"frequency": 63,
 				"q": 4.32,
-				"gain": 1.5,
+				"gain": 2.0,
 				"color": 0
 			},
 			{
@@ -65,7 +65,7 @@
 				"channels": 0,
 				"frequency": 100,
 				"q": 4.32,
-				"gain": 0.8,
+				"gain": 0.5,
 				"color": 0
 			},
 			{
@@ -73,7 +73,7 @@
 				"channels": 0,
 				"frequency": 125,
 				"q": 4.32,
-				"gain": 0.5,
+				"gain": 0.0,
 				"color": 0
 			},
 			{
@@ -81,7 +81,7 @@
 				"channels": 0,
 				"frequency": 160,
 				"q": 4.32,
-				"gain": 0.2,
+				"gain": 0.0,
 				"color": 0
 			},
 			{
@@ -89,7 +89,7 @@
 				"channels": 0,
 				"frequency": 200,
 				"q": 4.32,
-				"gain": 0.1,
+				"gain": -0.5,
 				"color": 0
 			},
 			{
@@ -97,7 +97,7 @@
 				"channels": 0,
 				"frequency": 250,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": -0.5,
 				"color": 0
 			},
 			{
@@ -113,7 +113,7 @@
 				"channels": 0,
 				"frequency": 400,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": 0.2,
 				"color": 0
 			},
 			{
@@ -121,7 +121,7 @@
 				"channels": 0,
 				"frequency": 500,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": 0.5,
 				"color": 0
 			},
 			{
@@ -129,7 +129,7 @@
 				"channels": 0,
 				"frequency": 630,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": 0.4,
 				"color": 0
 			},
 			{
@@ -137,7 +137,7 @@
 				"channels": 0,
 				"frequency": 800,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": 0.2,
 				"color": 0
 			},
 			{
@@ -153,7 +153,7 @@
 				"channels": 0,
 				"frequency": 1250,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": -0.2,
 				"color": 0
 			},
 			{
@@ -161,7 +161,7 @@
 				"channels": 0,
 				"frequency": 1600,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": -0.5,
 				"color": 0
 			},
 			{
@@ -169,7 +169,7 @@
 				"channels": 0,
 				"frequency": 2000,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": -0.8,
 				"color": 0
 			},
 			{
@@ -177,7 +177,7 @@
 				"channels": 0,
 				"frequency": 2500,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": -0.5,
 				"color": 0
 			},
 			{
@@ -193,7 +193,7 @@
 				"channels": 0,
 				"frequency": 4000,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": 0.5,
 				"color": 0
 			},
 			{
@@ -201,7 +201,7 @@
 				"channels": 0,
 				"frequency": 5000,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": 1.0,
 				"color": 0
 			},
 			{
@@ -209,7 +209,7 @@
 				"channels": 0,
 				"frequency": 6300,
 				"q": 4.32,
-				"gain": 0.0,
+				"gain": 0.8,
 				"color": 0
 			},
 			{
@@ -217,7 +217,7 @@
 				"channels": 0,
 				"frequency": 8000,
 				"q": 4.32,
-				"gain": 0.1,
+				"gain": 0.5,
 				"color": 0
 			},
 			{
@@ -225,7 +225,7 @@
 				"channels": 0,
 				"frequency": 10000,
 				"q": 4.32,
-				"gain": 0.2,
+				"gain": 1.0,
 				"color": 0
 			},
 			{
@@ -233,7 +233,7 @@
 				"channels": 0,
 				"frequency": 12500,
 				"q": 4.32,
-				"gain": 0.3,
+				"gain": 1.2,
 				"color": 0
 			},
 			{
@@ -241,7 +241,7 @@
 				"channels": 0,
 				"frequency": 16000,
 				"q": 4.32,
-				"gain": 0.3,
+				"gain": 1.5,
 				"color": 0
 			},
 			{
@@ -249,7 +249,7 @@
 				"channels": 0,
 				"frequency": 20000,
 				"q": 4.32,
-				"gain": 0.4,
+				"gain": 1.0,
 				"color": 0
 			}
 		]
