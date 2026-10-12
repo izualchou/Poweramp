@@ -243,6 +243,14 @@
 				"q": 0.7,
 				"gain": 0.5,
 				"color": 0
+			},
+			{
+				"type": 3,
+				"channels": 0,
+				"frequency": 20000,
+				"q": 0.7,
+				"gain": 0.0,
+				"color": 0
 			}
 		]
 	}
